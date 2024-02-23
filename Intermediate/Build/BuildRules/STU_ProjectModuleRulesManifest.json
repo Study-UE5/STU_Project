@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\Study_C++\\UE5\\S05_Shooter\\STU_Project\\Source\\STU_Project\\STU_Project.Build.cs",
+		"E:\\Study_C++\\UE5\\S05_Shooter\\STU_Project\\Source\\STU_Project.Target.cs",
+		"E:\\Study_C++\\UE5\\S05_Shooter\\STU_Project\\Source\\STU_ProjectEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

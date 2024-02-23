@@ -1,0 +1,2 @@
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\Definitions.STU_Project.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\STU_Project.h

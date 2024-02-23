@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "STU_Project",
+			"Path": "E:\\Study_C++\\UE5\\S05_Shooter\\STU_Project\\Source\\STU_Project.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "STU_ProjectEditor",
+			"Path": "E:\\Study_C++\\UE5\\S05_Shooter\\STU_Project\\Source\\STU_ProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
