@@ -43,12 +43,13 @@ void ASTU_BaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAxis("MoveRight", this, &ASTU_BaseCharacter::MoveRight);
 	PlayerInputComponent->BindAxis("LookUp", this, &ASTU_BaseCharacter::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("TurnAround", this, &ASTU_BaseCharacter::AddControllerYawInput);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASTU_BaseCharacter::Jump);
 }
 
 void ASTU_BaseCharacter::MoveForward(float Amount)
 {
 	//IsMovingForward = Amount > 0.0f;
-	//if (Amount == 0.0f) return;
+	if (Amount == 0.0f) return;
 	AddMovementInput(GetActorForwardVector(), Amount);
 }
 
