@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\STU_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AEBAFF54-3755-404F-BB60-10780CC81B36}</UniqueIdentifier>
+      <UniqueIdentifier>{9FC4CEEB-BEAB-4DA1-A0D4-AF033A9806B4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\STU_Project.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,11 @@
     <None Include="..\..\Source\STU_ProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\README.md" />
     <Filter Include="Config">
-      <UniqueIdentifier>{76EA098C-50CF-4199-B061-CAED74A65535}</UniqueIdentifier>
+      <UniqueIdentifier>{91EF70A6-80CD-40DF-9A14-BACFCA6127BD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\STU_Project">
-      <UniqueIdentifier>{B0E928A8-87BE-47B9-B4D6-A669805719E3}</UniqueIdentifier>
+      <UniqueIdentifier>{60322AA0-5EAA-4A38-8F12-27AF07C5E46E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\STU_Project\STU_Project.Build.cs">
       <Filter>Source\STU_Project</Filter>
@@ -40,6 +43,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\STU_Project\STU_ProjectGameModeBase.h">
       <Filter>Source\STU_Project</Filter>
+    </ClInclude>
+    <Filter Include="Source\STU_Project\Private">
+      <UniqueIdentifier>{5DF2F256-775B-49C8-B8A4-6C703DC5D879}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\STU_Project\Private\STU_GameModeBase.cpp">
+      <Filter>Source\STU_Project\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\STU_Project\Public">
+      <UniqueIdentifier>{7165B0B8-B96B-4CB6-BD1C-3BC40D6D61A2}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\STU_Project\Public\STU_GameModeBase.h">
+      <Filter>Source\STU_Project\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
