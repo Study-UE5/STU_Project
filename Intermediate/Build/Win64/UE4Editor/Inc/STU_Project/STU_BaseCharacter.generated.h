@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define STU_PROJECT_STU_BaseCharacter_generated_h
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_SPARSE_DATA
-#define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_RPC_WRAPPERS
-#define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execIsRunning);
+
+
+#define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execIsRunning);
+
+
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASTU_BaseCharacter(); \
@@ -36,7 +44,7 @@ public: \
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ASTU_BaseCharacter(const FObjectInitializer& ObjectInitializer); \
+	NO_API ASTU_BaseCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASTU_BaseCharacter) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASTU_BaseCharacter); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASTU_BaseCharacter); \
@@ -55,7 +63,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASTU_BaseCharacter); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASTU_BaseCharacter); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASTU_BaseCharacter)
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASTU_BaseCharacter)
 
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
