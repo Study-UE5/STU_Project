@@ -7,6 +7,7 @@
 #include "STU_BaseCharacter.generated.h"
 
 class UCameraComponent;
+class USpringArmComponent;
 
 UCLASS()
 class STU_PROJECT_API ASTU_BaseCharacter : public ACharacter
@@ -18,6 +19,8 @@ public:
 	ASTU_BaseCharacter();
 
 protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
+	USpringArmComponent* SpringArmComponent;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
 	UCameraComponent* CameraComponent;
