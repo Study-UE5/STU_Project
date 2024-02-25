@@ -13,5 +13,8 @@ UCLASS()
 class STU_PROJECT_API ASTU_GameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+public:
+	ASTU_GameModeBase();
 	
 };
