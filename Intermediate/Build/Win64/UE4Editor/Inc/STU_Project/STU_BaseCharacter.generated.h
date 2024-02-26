@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_SPARSE_DATA
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetMovementDirection); \
 	DECLARE_FUNCTION(execIsRunning);
 
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetMovementDirection); \
 	DECLARE_FUNCTION(execIsRunning);
 
 
