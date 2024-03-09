@@ -60,6 +60,7 @@ void ASTU_BaseCharacter::Tick(float DeltaTime)
 void ASTU_BaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	check(PlayerInputComponent);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ASTU_BaseCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ASTU_BaseCharacter::MoveRight);
@@ -125,7 +126,7 @@ void ASTU_BaseCharacter::OnDeath()
 
 void ASTU_BaseCharacter::OnGroundLanded(const FHitResult& Hit)
 {
-	const auto FallVelocityZ = -GetCharacterMovement()->Velocity.Z;
+	const auto FallVelocityZ = -GetVelocity().Z;
 
 	if (FallVelocityZ < LandedDamageVelocity.X) return;
 	const auto FinalDamage = FMath::GetMappedRangeValueClamped(LandedDamageVelocity, LandedDamage, FallVelocityZ);

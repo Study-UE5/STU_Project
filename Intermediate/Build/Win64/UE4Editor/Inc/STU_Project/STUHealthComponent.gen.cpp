@@ -73,6 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_USTUHealthComponent_IsDead_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Health" },
 		{ "ModuleRelativePath", "Public/Components/STUHealthComponent.h" },
 	};
 #endif
@@ -183,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_STU_Project,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USTUHealthComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_USTUHealthComponent_IsDead, "IsDead" }, // 364264848
+		{ &Z_Construct_UFunction_USTUHealthComponent_IsDead, "IsDead" }, // 3321892625
 		{ &Z_Construct_UFunction_USTUHealthComponent_OnTakeAnyDamage, "OnTakeAnyDamage" }, // 2304830946
 	};
 #if WITH_METADATA
@@ -272,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USTUHealthComponent, 438168258);
+	IMPLEMENT_CLASS(USTUHealthComponent, 1239244699);
 	template<> STU_PROJECT_API UClass* StaticClass<USTUHealthComponent>()
 	{
 		return USTUHealthComponent::StaticClass();

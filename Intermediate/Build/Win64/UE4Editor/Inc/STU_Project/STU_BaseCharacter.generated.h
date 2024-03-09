@@ -77,6 +77,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__HealthTextComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthTextComponent); } \
 	FORCEINLINE static uint32 __PPO__DeathAnimMontage() { return STRUCT_OFFSET(ASTU_BaseCharacter, DeathAnimMontage); } \
+	FORCEINLINE static uint32 __PPO__LifeSpanOnDeath() { return STRUCT_OFFSET(ASTU_BaseCharacter, LifeSpanOnDeath); } \
 	FORCEINLINE static uint32 __PPO__LandedDamageVelocity() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamageVelocity); } \
 	FORCEINLINE static uint32 __PPO__LandedDamage() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamage); }
 
