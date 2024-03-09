@@ -42,6 +42,8 @@ void ASTU_BaseCharacter::BeginPlay()
 	OnHealthChanged(HealthComponent->GetHealth());
 	HealthComponent->OnDeath.AddUObject(this, &ASTU_BaseCharacter::OnDeath);
 	HealthComponent->OnHealthChanged.AddUObject(this, &ASTU_BaseCharacter::OnHealthChanged);
+
+	LandedDelegate.AddDynamic(this, &ASTU_BaseCharacter::OnGroundLanded);
 }
 
 void ASTU_BaseCharacter::OnHealthChanged(float Health)
@@ -119,4 +121,13 @@ void ASTU_BaseCharacter::OnDeath()
 	{
 		Controller->ChangeState(NAME_Spectating);
 	}
+}
+
+void ASTU_BaseCharacter::OnGroundLanded(const FHitResult& Hit)
+{
+	const auto FallVelocityZ = -GetCharacterMovement()->Velocity.Z;
+
+	if (FallVelocityZ < LandedDamageVelocity.X) return;
+	const auto FinalDamage = FMath::GetMappedRangeValueClamped(LandedDamageVelocity, LandedDamage, FallVelocityZ);
+	TakeDamage(FinalDamage, FDamageEvent{}, nullptr, nullptr);
 }

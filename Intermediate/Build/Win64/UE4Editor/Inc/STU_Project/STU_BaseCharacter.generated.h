@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FHitResult;
 #ifdef STU_PROJECT_STU_BaseCharacter_generated_h
 #error "STU_BaseCharacter.generated.h already included, missing '#pragma once' in STU_BaseCharacter.h"
 #endif
@@ -16,12 +17,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_17_SPARSE_DATA
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_17_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnGroundLanded); \
 	DECLARE_FUNCTION(execGetMovementDirection); \
 	DECLARE_FUNCTION(execIsRunning);
 
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnGroundLanded); \
 	DECLARE_FUNCTION(execGetMovementDirection); \
 	DECLARE_FUNCTION(execIsRunning);
 
@@ -73,7 +76,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, CameraComponent); } \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__HealthTextComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthTextComponent); } \
-	FORCEINLINE static uint32 __PPO__DeathAnimMontage() { return STRUCT_OFFSET(ASTU_BaseCharacter, DeathAnimMontage); }
+	FORCEINLINE static uint32 __PPO__DeathAnimMontage() { return STRUCT_OFFSET(ASTU_BaseCharacter, DeathAnimMontage); } \
+	FORCEINLINE static uint32 __PPO__LandedDamageVelocity() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamageVelocity); } \
+	FORCEINLINE static uint32 __PPO__LandedDamage() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamage); }
 
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_14_PROLOG
