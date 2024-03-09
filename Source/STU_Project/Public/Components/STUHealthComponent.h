@@ -22,6 +22,11 @@ protected:
 	float MaxHealth = 100.0f;
 
 	virtual void BeginPlay() override;
+
 private:
 	float Health = 0.0f;
+
+	UFUNCTION()
+	void OnTakeAnyDamage(
+		AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 };

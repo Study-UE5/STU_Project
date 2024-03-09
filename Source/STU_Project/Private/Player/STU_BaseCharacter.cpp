@@ -9,6 +9,8 @@
 #include "Components/STUHealthComponent.h"
 #include "Components/TextRenderComponent.h"
 
+DEFINE_LOG_CATEGORY_STATIC(LogBaseCharacter, All, All)
+
 ASTU_BaseCharacter::ASTU_BaseCharacter(const FObjectInitializer& ObjInit)
 	: Super(ObjInit.SetDefaultSubobjectClass<USTU_CharacterMovementComponent>(ACharacter::CharacterMovementComponentName))
 {
@@ -42,6 +44,8 @@ void ASTU_BaseCharacter::Tick(float DeltaTime)
 
 	const auto Health = HealthComponent->GetHealth();
 	HealthTextComponent->SetText(FText::FromString(FString::Printf(TEXT("%.0f"), Health)));
+
+	TakeDamage(0.1f, FDamageEvent{}, Controller, this);
 }
 
 // Called to bind functionality to input

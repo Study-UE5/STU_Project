@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UDamageType;
+class AController;
 #ifdef STU_PROJECT_STUHealthComponent_generated_h
 #error "STUHealthComponent.generated.h already included, missing '#pragma once' in STUHealthComponent.h"
 #endif
 #define STU_PROJECT_STUHealthComponent_generated_h
 
 #define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_SPARSE_DATA
-#define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_RPC_WRAPPERS
-#define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnTakeAnyDamage);
+
+
+#define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnTakeAnyDamage);
+
+
 #define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUSTUHealthComponent(); \
