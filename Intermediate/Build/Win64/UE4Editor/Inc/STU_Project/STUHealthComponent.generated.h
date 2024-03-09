@@ -72,7 +72,11 @@ public: \
 
 
 #define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(USTUHealthComponent, MaxHealth); }
+	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(USTUHealthComponent, MaxHealth); } \
+	FORCEINLINE static uint32 __PPO__AutoHeal() { return STRUCT_OFFSET(USTUHealthComponent, AutoHeal); } \
+	FORCEINLINE static uint32 __PPO__HealUpdateTime() { return STRUCT_OFFSET(USTUHealthComponent, HealUpdateTime); } \
+	FORCEINLINE static uint32 __PPO__HealDelay() { return STRUCT_OFFSET(USTUHealthComponent, HealDelay); } \
+	FORCEINLINE static uint32 __PPO__HealModifier() { return STRUCT_OFFSET(USTUHealthComponent, HealModifier); }
 
 
 #define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_12_PROLOG
