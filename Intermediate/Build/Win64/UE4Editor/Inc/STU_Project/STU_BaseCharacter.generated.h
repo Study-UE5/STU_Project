@@ -72,7 +72,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__SpringArmComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, SpringArmComponent); } \
 	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, CameraComponent); } \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthComponent); } \
-	FORCEINLINE static uint32 __PPO__HealthTextComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthTextComponent); }
+	FORCEINLINE static uint32 __PPO__HealthTextComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthTextComponent); } \
+	FORCEINLINE static uint32 __PPO__DeathAnimMontage() { return STRUCT_OFFSET(ASTU_BaseCharacter, DeathAnimMontage); }
 
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_14_PROLOG
