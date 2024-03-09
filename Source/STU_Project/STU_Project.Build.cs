@@ -12,7 +12,8 @@ public class STU_Project : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
-		PublicIncludePaths.AddRange(new string[] { 
+		PublicIncludePaths.AddRange(new string[]
+		{ 
 		"STU_Project/Public/Player",
         "ShootThemUp/Public/Components"
         });
