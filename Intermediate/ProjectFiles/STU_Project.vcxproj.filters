@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\STU_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{689DE8BB-4754-47EB-A1B6-D25AE1EB8131}</UniqueIdentifier>
+      <UniqueIdentifier>{A668229D-3D54-4E4E-AE57-9345BFB2FAA6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\STU_Project.Target.cs">
       <Filter>Source</Filter>
@@ -15,7 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\README.md" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6A5566FB-8B3F-494D-B5AE-ECDC271930E8}</UniqueIdentifier>
+      <UniqueIdentifier>{CA208784-3E4C-47AF-91EA-0370D776858D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\STU_Project">
-      <UniqueIdentifier>{25D74176-8303-4F05-84EF-C5AE851B5BFC}</UniqueIdentifier>
+      <UniqueIdentifier>{6CE017EC-B541-4E7D-919C-16DC3CC29359}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\STU_Project\STU_Project.Build.cs">
       <Filter>Source\STU_Project</Filter>
@@ -48,13 +48,13 @@
       <Filter>Source\STU_Project</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Private">
-      <UniqueIdentifier>{70B60C85-EAD4-4823-8C2B-EDD0CE4237EF}</UniqueIdentifier>
+      <UniqueIdentifier>{29259D3A-3F7D-4650-AC88-67B05810F205}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\STU_GameModeBase.cpp">
       <Filter>Source\STU_Project\Private</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Components">
-      <UniqueIdentifier>{DA2B9741-3770-4D1D-A176-2273C8DC1BF1}</UniqueIdentifier>
+      <UniqueIdentifier>{A9FD9FF4-1E20-4FD8-A936-88E2A6826238}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Components\STUHealthComponent.cpp">
       <Filter>Source\STU_Project\Private\Components</Filter>
@@ -62,8 +62,14 @@
     <ClCompile Include="..\..\Source\STU_Project\Private\Components\STU_CharacterMovementComponent.cpp">
       <Filter>Source\STU_Project\Private\Components</Filter>
     </ClCompile>
+    <Filter Include="Source\STU_Project\Private\Dev">
+      <UniqueIdentifier>{0EA15A68-C16D-473C-B60B-0EC756CE3102}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\STU_Project\Private\Dev\STUDevDamageActor.cpp">
+      <Filter>Source\STU_Project\Private\Dev</Filter>
+    </ClCompile>
     <Filter Include="Source\STU_Project\Private\Player">
-      <UniqueIdentifier>{4366281A-EF13-4310-9F86-DC6EAC511189}</UniqueIdentifier>
+      <UniqueIdentifier>{252E2C33-EA0F-4676-B858-B02A09E4BE2B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Player\STU_BaseCharacter.cpp">
       <Filter>Source\STU_Project\Private\Player</Filter>
@@ -72,13 +78,13 @@
       <Filter>Source\STU_Project\Private\Player</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Public">
-      <UniqueIdentifier>{914D1F07-E9AD-4BB6-94F2-D69EFA6CAC66}</UniqueIdentifier>
+      <UniqueIdentifier>{44D17A4F-EFAA-4CBF-8854-B5E79DF95ECC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\STU_GameModeBase.h">
       <Filter>Source\STU_Project\Public</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Components">
-      <UniqueIdentifier>{33C5B6C8-B1A1-4F57-81D2-6547B02CC2CF}</UniqueIdentifier>
+      <UniqueIdentifier>{4BE357BB-6372-4E5C-B39A-EB82E7F90D6D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Components\STUHealthComponent.h">
       <Filter>Source\STU_Project\Public\Components</Filter>
@@ -86,8 +92,14 @@
     <ClInclude Include="..\..\Source\STU_Project\Public\Components\STU_CharacterMovementComponent.h">
       <Filter>Source\STU_Project\Public\Components</Filter>
     </ClInclude>
+    <Filter Include="Source\STU_Project\Public\Dev">
+      <UniqueIdentifier>{AFF7E4F0-9CC8-44BF-A31D-88D395053DFF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\STU_Project\Public\Dev\STUDevDamageActor.h">
+      <Filter>Source\STU_Project\Public\Dev</Filter>
+    </ClInclude>
     <Filter Include="Source\STU_Project\Public\Player">
-      <UniqueIdentifier>{BE42541F-1668-4CA4-AB0C-261C2144607E}</UniqueIdentifier>
+      <UniqueIdentifier>{1885BACD-30CC-445F-85E9-D892C4AB2B6D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Player\STU_BaseCharacter.h">
       <Filter>Source\STU_Project\Public\Player</Filter>
