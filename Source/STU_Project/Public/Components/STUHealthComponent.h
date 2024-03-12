@@ -17,13 +17,13 @@ class STU_PROJECT_API USTUHealthComponent : public UActorComponent
 public:	
 	USTUHealthComponent();
 
-	float GetHealth() const { return Health; }
-
 	FOnDeathSignature OnDeath;
 	FOnHealthChangedSignature OnHealthChanged;
 
 	UFUNCTION(BlueprintCallable, Category = "Health")
 	bool IsDead() const { return FMath::IsNearlyZero(Health); }
+
+	float GetHealth() const { return Health; }
 
 protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Health", meta = (ClampMin = "0.0", ClampMax = "1000.0"))

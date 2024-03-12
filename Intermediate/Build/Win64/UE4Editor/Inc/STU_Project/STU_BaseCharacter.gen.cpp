@@ -266,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent = { "HealthTextComponent", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, HealthTextComponent), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_DeathAnimMontage_MetaData[] = {
-		{ "Category", "Animations" },
+		{ "Category", "Animation" },
 		{ "ModuleRelativePath", "Public/Player/STU_BaseCharacter.h" },
 	};
 #endif
@@ -329,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTU_BaseCharacter, 62424534);
+	IMPLEMENT_CLASS(ASTU_BaseCharacter, 3292651858);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTU_BaseCharacter>()
 	{
 		return ASTU_BaseCharacter::StaticClass();
