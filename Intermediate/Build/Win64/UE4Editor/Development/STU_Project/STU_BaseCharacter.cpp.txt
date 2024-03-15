@@ -33,3 +33,5 @@ E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Components/ST
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUHealthComponent.generated.h
 E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
 E:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Weapons/STUBaseWeapon.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUBaseWeapon.generated.h
