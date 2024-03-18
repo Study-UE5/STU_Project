@@ -8,8 +8,8 @@
 #include "Components/STU_CharacterMovementComponent.h"
 #include "Components/STUHealthComponent.h"
 #include "Components/TextRenderComponent.h"
+#include "Components/STUWeaponsComponent.h"
 #include "GameFramework/Controller.h"
-#include "Weapons/STUBaseWeapon.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogBaseCharacter, All, All)
 
@@ -31,6 +31,8 @@ ASTU_BaseCharacter::ASTU_BaseCharacter(const FObjectInitializer& ObjInit)
 	HealthTextComponent = CreateDefaultSubobject<UTextRenderComponent>("HealthTextComponent");
 	HealthTextComponent->SetupAttachment(GetRootComponent());
 	HealthTextComponent->SetOwnerNoSee(true);
+
+	WeaponsComponent = CreateDefaultSubobject<USTUWeaponsComponent>("WeaponsComponent");
 }
 
 // Called when the game starts or when spawned
@@ -47,8 +49,6 @@ void ASTU_BaseCharacter::BeginPlay()
 	HealthComponent->OnHealthChanged.AddUObject(this, &ASTU_BaseCharacter::OnHealthChanged);
 
 	LandedDelegate.AddDynamic(this, &ASTU_BaseCharacter::OnGroundLanded);
-
-	SpawnWeapon();
 }
 
 void ASTU_BaseCharacter::OnHealthChanged(float Health)
@@ -66,6 +66,7 @@ void ASTU_BaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	check(PlayerInputComponent);
+	check(WeaponsComponent);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ASTU_BaseCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ASTU_BaseCharacter::MoveRight);
@@ -74,6 +75,7 @@ void ASTU_BaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASTU_BaseCharacter::Jump);
 	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ASTU_BaseCharacter::OnStartRunning);
 	PlayerInputComponent->BindAction("Run", IE_Released, this, &ASTU_BaseCharacter::OnStopRunning);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, WeaponsComponent, &USTUWeaponsComponent::Fire);
 }
 
 void ASTU_BaseCharacter::MoveForward(float Amount)
@@ -136,16 +138,4 @@ void ASTU_BaseCharacter::OnGroundLanded(const FHitResult& Hit)
 	if (FallVelocityZ < LandedDamageVelocity.X) return;
 	const auto FinalDamage = FMath::GetMappedRangeValueClamped(LandedDamageVelocity, LandedDamage, FallVelocityZ);
 	TakeDamage(FinalDamage, FDamageEvent{}, nullptr, nullptr);
-}
-
-void ASTU_BaseCharacter::SpawnWeapon()
-{
-	if (!GetWorld()) return;
-
-	const auto Weapon = GetWorld()->SpawnActor<ASTUBaseWeapon>(WeaponClass);
-	if (Weapon)
-	{
-		FAttachmentTransformRules AttachmentRules(EAttachmentRule::SnapToTarget, false);
-		Weapon->AttachToComponent(GetMesh(), AttachmentRules, "WeaponSocket");
-	}
 }

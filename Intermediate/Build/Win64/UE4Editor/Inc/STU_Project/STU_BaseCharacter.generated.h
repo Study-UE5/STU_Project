@@ -76,11 +76,11 @@ public: \
 	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, CameraComponent); } \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__HealthTextComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, HealthTextComponent); } \
+	FORCEINLINE static uint32 __PPO__WeaponsComponent() { return STRUCT_OFFSET(ASTU_BaseCharacter, WeaponsComponent); } \
 	FORCEINLINE static uint32 __PPO__DeathAnimMontage() { return STRUCT_OFFSET(ASTU_BaseCharacter, DeathAnimMontage); } \
 	FORCEINLINE static uint32 __PPO__LifeSpanOnDeath() { return STRUCT_OFFSET(ASTU_BaseCharacter, LifeSpanOnDeath); } \
 	FORCEINLINE static uint32 __PPO__LandedDamageVelocity() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamageVelocity); } \
-	FORCEINLINE static uint32 __PPO__LandedDamage() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamage); } \
-	FORCEINLINE static uint32 __PPO__WeaponClass() { return STRUCT_OFFSET(ASTU_BaseCharacter, WeaponClass); }
+	FORCEINLINE static uint32 __PPO__LandedDamage() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamage); }
 
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_PROLOG
