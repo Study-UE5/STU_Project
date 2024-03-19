@@ -1,3 +1,10 @@
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\Definitions.STU_Project.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Weapons/STUBaseWeapon.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUBaseWeapon.generated.h
+E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+E:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+E:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+E:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
