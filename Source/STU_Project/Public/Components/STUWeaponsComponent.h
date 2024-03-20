@@ -16,7 +16,8 @@ class STU_PROJECT_API USTUWeaponsComponent : public UActorComponent
 public:	
 	USTUWeaponsComponent();
 
-	void Fire();
+	void StartFire();
+	void StopFire();
 
 protected:
 	

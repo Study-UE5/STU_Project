@@ -76,7 +76,8 @@ void ASTU_BaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASTU_BaseCharacter::Jump);
 	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ASTU_BaseCharacter::OnStartRunning);
 	PlayerInputComponent->BindAction("Run", IE_Released, this, &ASTU_BaseCharacter::OnStopRunning);
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, WeaponsComponent, &USTUWeaponsComponent::Fire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, WeaponsComponent, &USTUWeaponsComponent::StartFire);
+	PlayerInputComponent->BindAction("Fire", IE_Released, WeaponsComponent, &USTUWeaponsComponent::StopFire);
 }
 
 void ASTU_BaseCharacter::MoveForward(float Amount)
