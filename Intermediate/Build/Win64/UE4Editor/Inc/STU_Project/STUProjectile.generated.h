@@ -8,14 +8,26 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FVector;
+struct FHitResult;
 #ifdef STU_PROJECT_STUProjectile_generated_h
 #error "STUProjectile.generated.h already included, missing '#pragma once' in STUProjectile.h"
 #endif
 #define STU_PROJECT_STUProjectile_generated_h
 
 #define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_15_SPARSE_DATA
-#define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_15_RPC_WRAPPERS
-#define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnProjectileHit);
+
+
+#define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnProjectileHit);
+
+
 #define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASTUProjectile(); \
@@ -60,7 +72,11 @@ public: \
 
 #define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CollisionComponent() { return STRUCT_OFFSET(ASTUProjectile, CollisionComponent); } \
-	FORCEINLINE static uint32 __PPO__MovementComponent() { return STRUCT_OFFSET(ASTUProjectile, MovementComponent); }
+	FORCEINLINE static uint32 __PPO__MovementComponent() { return STRUCT_OFFSET(ASTUProjectile, MovementComponent); } \
+	FORCEINLINE static uint32 __PPO__DamageRadius() { return STRUCT_OFFSET(ASTUProjectile, DamageRadius); } \
+	FORCEINLINE static uint32 __PPO__DamageAmount() { return STRUCT_OFFSET(ASTUProjectile, DamageAmount); } \
+	FORCEINLINE static uint32 __PPO__DoFullDamage() { return STRUCT_OFFSET(ASTUProjectile, DoFullDamage); } \
+	FORCEINLINE static uint32 __PPO__LifeSeconds() { return STRUCT_OFFSET(ASTUProjectile, LifeSeconds); }
 
 
 #define STU_Project_Source_STU_Project_Public_Weapons_STUProjectile_h_12_PROLOG

@@ -62,7 +62,8 @@ public: \
 
 #define STU_Project_Source_STU_Project_Public_Weapons_STURifleWeapon_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__TimeBetweenShots() { return STRUCT_OFFSET(ASTURifleWeapon, TimeBetweenShots); } \
-	FORCEINLINE static uint32 __PPO__BulletSpred() { return STRUCT_OFFSET(ASTURifleWeapon, BulletSpred); }
+	FORCEINLINE static uint32 __PPO__BulletSpred() { return STRUCT_OFFSET(ASTURifleWeapon, BulletSpred); } \
+	FORCEINLINE static uint32 __PPO__DamageAmount() { return STRUCT_OFFSET(ASTURifleWeapon, DamageAmount); }
 
 
 #define STU_Project_Source_STU_Project_Public_Weapons_STURifleWeapon_h_9_PROLOG
