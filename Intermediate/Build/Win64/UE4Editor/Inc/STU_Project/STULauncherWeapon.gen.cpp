@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeSTULauncherWeapon() {}
 	STU_PROJECT_API UClass* Z_Construct_UClass_ASTULauncherWeapon();
 	STU_PROJECT_API UClass* Z_Construct_UClass_ASTUBaseWeapon();
 	UPackage* Z_Construct_UPackage__Script_STU_Project();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	STU_PROJECT_API UClass* Z_Construct_UClass_ASTUProjectile_NoRegister();
 // End Cross Module References
 	void ASTULauncherWeapon::StaticRegisterNativesASTULauncherWeapon()
 	{
@@ -31,6 +33,11 @@ void EmptyLinkFunctionForGeneratedCodeSTULauncherWeapon() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -40,11 +47,20 @@ void EmptyLinkFunctionForGeneratedCodeSTULauncherWeapon() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTULauncherWeapon_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Weapons/STULauncherWeapon.h" },
 		{ "ModuleRelativePath", "Public/Weapons/STULauncherWeapon.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTULauncherWeapon_Statics::NewProp_ProjectileClass_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Public/Weapons/STULauncherWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASTULauncherWeapon_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0024080000010005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTULauncherWeapon, ProjectileClass), Z_Construct_UClass_ASTUProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASTULauncherWeapon_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTULauncherWeapon_Statics::NewProp_ProjectileClass_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTULauncherWeapon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTULauncherWeapon_Statics::NewProp_ProjectileClass,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASTULauncherWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASTULauncherWeapon>::IsAbstract,
 	};
@@ -54,11 +70,11 @@ void EmptyLinkFunctionForGeneratedCodeSTULauncherWeapon() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ASTULauncherWeapon_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ASTULauncherWeapon_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ASTULauncherWeapon_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ASTULauncherWeapon_Statics::Class_MetaDataParams))
@@ -72,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeSTULauncherWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTULauncherWeapon, 2728078274);
+	IMPLEMENT_CLASS(ASTULauncherWeapon, 196292670);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTULauncherWeapon>()
 	{
 		return ASTULauncherWeapon::StaticClass();
