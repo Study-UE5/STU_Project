@@ -59,9 +59,11 @@ public: \
 
 
 #define STU_Project_Source_STU_Project_Public_Components_STUWeaponsComponent_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__WeaponClass() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponClass); } \
-	FORCEINLINE static uint32 __PPO__WeaponAttachPointName() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponAttachPointName); } \
-	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(USTUWeaponsComponent, CurrentWeapon); }
+	FORCEINLINE static uint32 __PPO__WeaponClasses() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponClasses); } \
+	FORCEINLINE static uint32 __PPO__WeaponEquipSocketName() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponEquipSocketName); } \
+	FORCEINLINE static uint32 __PPO__WeaponArmorySocketName() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponArmorySocketName); } \
+	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(USTUWeaponsComponent, CurrentWeapon); } \
+	FORCEINLINE static uint32 __PPO__Weapons() { return STRUCT_OFFSET(USTUWeaponsComponent, Weapons); }
 
 
 #define STU_Project_Source_STU_Project_Public_Components_STUWeaponsComponent_h_11_PROLOG

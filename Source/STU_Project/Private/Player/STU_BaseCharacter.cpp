@@ -78,6 +78,7 @@ void ASTU_BaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAction("Run", IE_Released, this, &ASTU_BaseCharacter::OnStopRunning);
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, WeaponsComponent, &USTUWeaponsComponent::StartFire);
 	PlayerInputComponent->BindAction("Fire", IE_Released, WeaponsComponent, &USTUWeaponsComponent::StopFire);
+	PlayerInputComponent->BindAction("NextWeapon", IE_Pressed, WeaponsComponent, &USTUWeaponsComponent::NextWeapon);
 }
 
 void ASTU_BaseCharacter::MoveForward(float Amount)
@@ -132,6 +133,7 @@ void ASTU_BaseCharacter::OnDeath()
 		Controller->ChangeState(NAME_Spectating);
 	}
 	GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+	WeaponsComponent->StopFire();
 }
 
 void ASTU_BaseCharacter::OnGroundLanded(const FHitResult& Hit)
