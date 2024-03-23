@@ -62,6 +62,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__WeaponClasses() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponClasses); } \
 	FORCEINLINE static uint32 __PPO__WeaponEquipSocketName() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponEquipSocketName); } \
 	FORCEINLINE static uint32 __PPO__WeaponArmorySocketName() { return STRUCT_OFFSET(USTUWeaponsComponent, WeaponArmorySocketName); } \
+	FORCEINLINE static uint32 __PPO__EquipAnimMontage() { return STRUCT_OFFSET(USTUWeaponsComponent, EquipAnimMontage); } \
 	FORCEINLINE static uint32 __PPO__CurrentWeapon() { return STRUCT_OFFSET(USTUWeaponsComponent, CurrentWeapon); } \
 	FORCEINLINE static uint32 __PPO__Weapons() { return STRUCT_OFFSET(USTUWeaponsComponent, Weapons); }
 
