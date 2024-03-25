@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeSTULauncherWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTULauncherWeapon, 2750849114);
+	IMPLEMENT_CLASS(ASTULauncherWeapon, 1559436634);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTULauncherWeapon>()
 	{
 		return ASTULauncherWeapon::StaticClass();

@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTURifleWeapon, 2283665614);
+	IMPLEMENT_CLASS(ASTURifleWeapon, 145567947);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTURifleWeapon>()
 	{
 		return ASTURifleWeapon::StaticClass();

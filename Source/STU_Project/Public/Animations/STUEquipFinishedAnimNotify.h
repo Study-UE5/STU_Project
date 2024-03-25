@@ -6,7 +6,7 @@
 #include "Animation/AnimNotifies/AnimNotify.h"
 #include "STUEquipFinishedAnimNotify.generated.h"
 
-DECLARE_MULTICAST_DELEGATE_OneParam(FOnNotifiedSignatture, USkeletalMeshComponent*);
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnNotifiedSignature, USkeletalMeshComponent*);
 
 UCLASS()
 class STU_PROJECT_API USTUEquipFinishedAnimNotify : public UAnimNotify
@@ -16,5 +16,5 @@ class STU_PROJECT_API USTUEquipFinishedAnimNotify : public UAnimNotify
 public:
 	virtual void Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation);
 
-	FOnNotifiedSignatture OnNotified;
+	FOnNotifiedSignature OnNotified;
 };
