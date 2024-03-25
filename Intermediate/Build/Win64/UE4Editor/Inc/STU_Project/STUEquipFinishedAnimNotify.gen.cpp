@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUEquipFinishedAnimNotify() {}
 // Cross Module References
 	STU_PROJECT_API UClass* Z_Construct_UClass_USTUEquipFinishedAnimNotify_NoRegister();
 	STU_PROJECT_API UClass* Z_Construct_UClass_USTUEquipFinishedAnimNotify();
-	ENGINE_API UClass* Z_Construct_UClass_UAnimNotify();
+	STU_PROJECT_API UClass* Z_Construct_UClass_USTUAnimNotify();
 	UPackage* Z_Construct_UPackage__Script_STU_Project();
 // End Cross Module References
 	void USTUEquipFinishedAnimNotify::StaticRegisterNativesUSTUEquipFinishedAnimNotify()
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUEquipFinishedAnimNotify() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_USTUEquipFinishedAnimNotify_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UAnimNotify,
+		(UObject* (*)())Z_Construct_UClass_USTUAnimNotify,
 		(UObject* (*)())Z_Construct_UPackage__Script_STU_Project,
 	};
 #if WITH_METADATA
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUEquipFinishedAnimNotify() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USTUEquipFinishedAnimNotify, 3546166935);
+	IMPLEMENT_CLASS(USTUEquipFinishedAnimNotify, 1984524067);
 	template<> STU_PROJECT_API UClass* StaticClass<USTUEquipFinishedAnimNotify>()
 	{
 		return USTUEquipFinishedAnimNotify::StaticClass();
