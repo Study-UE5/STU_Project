@@ -47,6 +47,7 @@ void USTUWeaponsComponent::SpawnWeapons()
 		auto Weapon = GetWorld()->SpawnActor<ASTUBaseWeapon>(OneWeaponData.WeaponClass);
 		if (!Weapon) return;
 
+		Weapon->OnClipEmpty.AddUObject(this, &USTUWeaponsComponent::OnEmtyClip);
 		Weapon->SetOwner(Character);
 		Weapons.Add(Weapon);
 
@@ -160,12 +161,26 @@ bool USTUWeaponsComponent::CanEquip() const
 
 bool USTUWeaponsComponent::CanReload() const
 {
-	return CurrentWeapon && !EquipAnimProgress && !ReloadAnimProgress;
+	return CurrentWeapon && !EquipAnimProgress && !ReloadAnimProgress && CurrentWeapon->CanReload();
 }
 
 void USTUWeaponsComponent::Reload()
 {
+	ChangeClip();
+}
+
+void USTUWeaponsComponent::OnEmtyClip()
+{
+	ChangeClip();
+}
+
+void USTUWeaponsComponent::ChangeClip()
+{
 	if (!CanReload()) return;
+	CurrentWeapon->StopFire();
+	CurrentWeapon->ChangeClip();
 	ReloadAnimProgress = true;
 	PlayAnimmontage(CurrentReloadAnimMontage);
 }
+
+
