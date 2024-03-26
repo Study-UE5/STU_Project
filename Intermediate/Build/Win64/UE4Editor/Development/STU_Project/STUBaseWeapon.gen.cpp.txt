@@ -2,4 +2,6 @@ E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Deve
 E:\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 E:\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project/Public/Weapons/STUBaseWeapon.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\STUCoreTypes.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUCoreTypes.generated.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUBaseWeapon.generated.h

@@ -192,4 +192,12 @@
       <Filter>Source\STU_Project\Public\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\STU_Project\Public\Animations\AnimUtils.h">
+      <Filter>Source\STU_Project\Public\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\STU_Project\Public\STUCoreTypes.h">
+      <Filter>Source\STU_Project\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

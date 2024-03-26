@@ -1,5 +1,7 @@
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\Definitions.STU_Project.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Components/STUWeaponsComponent.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\STUCoreTypes.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUCoreTypes.generated.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUWeaponsComponent.generated.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Weapons/STUBaseWeapon.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUBaseWeapon.generated.h
@@ -15,3 +17,4 @@ E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUEquipFinishedAnimNotify.generated.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Animations/STUReloadFinishedAnimNotify.h
 E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Inc\STU_Project\STUReloadFinishedAnimNotify.generated.h
+E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Animations/AnimUtils.h
