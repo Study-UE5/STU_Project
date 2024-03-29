@@ -62,7 +62,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__WeaponMesh() { return STRUCT_OFFSET(ASTUBaseWeapon, WeaponMesh); } \
 	FORCEINLINE static uint32 __PPO__MuzzleSocketName() { return STRUCT_OFFSET(ASTUBaseWeapon, MuzzleSocketName); } \
 	FORCEINLINE static uint32 __PPO__TraceMaxDistance() { return STRUCT_OFFSET(ASTUBaseWeapon, TraceMaxDistance); } \
-	FORCEINLINE static uint32 __PPO__DefaultAmmo() { return STRUCT_OFFSET(ASTUBaseWeapon, DefaultAmmo); }
+	FORCEINLINE static uint32 __PPO__DefaultAmmo() { return STRUCT_OFFSET(ASTUBaseWeapon, DefaultAmmo); } \
+	FORCEINLINE static uint32 __PPO__UIData() { return STRUCT_OFFSET(ASTUBaseWeapon, UIData); }
 
 
 #define STU_Project_Source_STU_Project_Public_Weapons_STUBaseWeapon_h_12_PROLOG
