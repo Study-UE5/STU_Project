@@ -33,6 +33,13 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 		P_THIS->OnTakeAnyDamage(Z_Param_DamagedActor,Z_Param_Damage,Z_Param_DamageType,Z_Param_InstigatedBy,Z_Param_DamageCauser);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(USTUHealthComponent::execGetHealthPercent)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetHealthPercent();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(USTUHealthComponent::execIsDead)
 	{
 		P_FINISH;
@@ -44,10 +51,44 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 	{
 		UClass* Class = USTUHealthComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetHealthPercent", &USTUHealthComponent::execGetHealthPercent },
 			{ "IsDead", &USTUHealthComponent::execIsDead },
 			{ "OnTakeAnyDamage", &USTUHealthComponent::execOnTakeAnyDamage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics
+	{
+		struct STUHealthComponent_eventGetHealthPercent_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(STUHealthComponent_eventGetHealthPercent_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+		{ "ModuleRelativePath", "Public/Components/STUHealthComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USTUHealthComponent, nullptr, "GetHealthPercent", nullptr, nullptr, sizeof(STUHealthComponent_eventGetHealthPercent_Parms), Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_USTUHealthComponent_IsDead_Statics
 	{
@@ -184,6 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_STU_Project,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USTUHealthComponent_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_USTUHealthComponent_GetHealthPercent, "GetHealthPercent" }, // 4114224562
 		{ &Z_Construct_UFunction_USTUHealthComponent_IsDead, "IsDead" }, // 3321892625
 		{ &Z_Construct_UFunction_USTUHealthComponent_OnTakeAnyDamage, "OnTakeAnyDamage" }, // 2304830946
 	};
@@ -273,7 +315,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USTUHealthComponent, 1239244699);
+	IMPLEMENT_CLASS(USTUHealthComponent, 1519583452);
 	template<> STU_PROJECT_API UClass* StaticClass<USTUHealthComponent>()
 	{
 		return USTUHealthComponent::StaticClass();

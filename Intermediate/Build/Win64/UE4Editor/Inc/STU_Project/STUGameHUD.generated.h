@@ -60,7 +60,10 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASTUGameHUD)
 
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_PRIVATE_PROPERTY_OFFSET
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__PlayerHUDWidgetClass() { return STRUCT_OFFSET(ASTUGameHUD, PlayerHUDWidgetClass); }
+
+
 #define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_12_PROLOG
 #define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -20,12 +20,14 @@ class AController;
 #define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnTakeAnyDamage); \
+	DECLARE_FUNCTION(execGetHealthPercent); \
 	DECLARE_FUNCTION(execIsDead);
 
 
 #define STU_Project_Source_STU_Project_Public_Components_STUHealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnTakeAnyDamage); \
+	DECLARE_FUNCTION(execGetHealthPercent); \
 	DECLARE_FUNCTION(execIsDead);
 
 
