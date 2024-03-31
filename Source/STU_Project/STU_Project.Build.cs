@@ -19,7 +19,8 @@ public class STU_Project : ModuleRules
         "STU_Project/Public/Dev",
         "STU_Project/Public/UI",
         "STU_Project/Public/Weapons",
-        "STU_Project/Public/Animations"
+        "STU_Project/Public/Animations",
+        "STU_Project/Public/Pickups"
         });
 
 		// Uncomment if you are using Slate UI

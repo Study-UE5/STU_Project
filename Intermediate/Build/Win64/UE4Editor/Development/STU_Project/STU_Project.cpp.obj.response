@@ -240,6 +240,7 @@
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\UI
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Weapons
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Animations
+/I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Pickups
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
