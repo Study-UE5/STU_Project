@@ -242,3 +242,15 @@ bool USTUWeaponsComponent::TryToAddAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType, 
 	}
 	return false;
 }
+
+bool USTUWeaponsComponent::TryToAddRifle(TSubclassOf<ASTUBaseWeapon> RifleType, int32 ClipsRifleAmount)
+{
+	for (const auto Weapon : Weapons)
+	{
+		if (Weapon && Weapon->IsA(RifleType))
+		{
+			return Weapon->TryToAddRifle(ClipsRifleAmount);
+		}
+	}
+	return false;
+}
