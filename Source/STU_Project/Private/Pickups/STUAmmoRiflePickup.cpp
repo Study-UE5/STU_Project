@@ -13,8 +13,8 @@ bool ASTUAmmoRiflePickup::GivePickupTo(APawn* PlayerPawn)
 	const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(PlayerPawn);
 	if (!HealthComponent || HealthComponent->IsDead()) return false;
 
-	const auto WeaponRifleComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponsComponent>(PlayerPawn);
-	if (!WeaponRifleComponent) return false;
+	const auto WeaponComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponsComponent>(PlayerPawn);
+	if (!WeaponComponent) return false;
 
-	return WeaponRifleComponent->TryToAddRifle(RifleType, ClipsRifleAmount);
+	return WeaponComponent->TryToAddRifle(RifleType, ClipsRifleAmount);
 }
