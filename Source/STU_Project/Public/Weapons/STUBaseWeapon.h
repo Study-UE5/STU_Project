@@ -62,7 +62,6 @@ protected:
 	bool IsAmmoEmpty() const;
 	bool IsClipEmpty() const;
 	bool IsAmmoFull() const;
-	bool IsAmmoRifleFull() const;
 
 	void LogAmmo();
 

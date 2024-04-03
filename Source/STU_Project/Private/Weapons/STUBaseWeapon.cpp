@@ -144,11 +144,6 @@ bool ASTUBaseWeapon::IsAmmoFull() const
 	return CurrentAmmo.Clips == DefaultAmmo.Clips && CurrentAmmo.Bullets == DefaultAmmo.Bullets;
 }
 
-bool ASTUBaseWeapon::IsAmmoRifleFull() const
-{
-	return CurrentAmmo.Clips == DefaultAmmo.Clips && CurrentAmmo.Bullets == DefaultAmmo.Bullets;
-}
-
 bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
 {
 	if (CurrentAmmo.Infinite || IsAmmoFull() || ClipsAmount <= 0) return false;
@@ -156,7 +151,7 @@ bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
 	if (IsAmmoEmpty())
 	{
 		UE_LOG(LogBaseWeapon, Display, TEXT("Ammo Was Emty!"));
-		CurrentAmmo.Clips = FMath::Clamp(CurrentAmmo.Clips + ClipsAmount, 0, DefaultAmmo.Clips + 1);
+		CurrentAmmo.Clips = FMath::Clamp(ClipsAmount, 0, DefaultAmmo.Clips + 1);
 		OnClipEmpty.Broadcast(this);
 	}
 	else if (CurrentAmmo.Clips < DefaultAmmo.Clips)
@@ -189,7 +184,7 @@ bool ASTUBaseWeapon::TryToAddRifle(int32 ClipsRifleAmount)
 	if (IsAmmoEmpty())
 	{
 		UE_LOG(LogBaseWeapon, Display, TEXT("Rifle Was Emty!"));
-		CurrentAmmo.Clips = FMath::Clamp(CurrentAmmo.Clips + ClipsRifleAmount, 0, DefaultAmmo.Clips + 1);
+		CurrentAmmo.Clips = FMath::Clamp(ClipsRifleAmount, 0, DefaultAmmo.Clips + 1);
 		OnClipEmpty.Broadcast(this);
 	}
 	else if (CurrentAmmo.Clips < DefaultAmmo.Clips)
