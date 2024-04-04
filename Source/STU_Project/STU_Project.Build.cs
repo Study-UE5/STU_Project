@@ -8,7 +8,14 @@ public class STU_Project : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] 
+		{ 
+			"Core", 
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"Niagara"
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
@@ -20,7 +27,8 @@ public class STU_Project : ModuleRules
         "STU_Project/Public/UI",
         "STU_Project/Public/Weapons",
         "STU_Project/Public/Animations",
-        "STU_Project/Public/Pickups"
+        "STU_Project/Public/Pickups",
+        "STU_Project/Public/Weapons/Components"
         });
 
 		// Uncomment if you are using Slate UI

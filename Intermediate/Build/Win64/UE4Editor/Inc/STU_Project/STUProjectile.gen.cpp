@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUProjectile() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
+	STU_PROJECT_API UClass* Z_Construct_UClass_USTUWeaponVFXComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ASTUProjectile::execOnProjectileHit)
 	{
@@ -136,6 +137,10 @@ void EmptyLinkFunctionForGeneratedCodeSTUProjectile() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MovementComponent;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponVFXComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WeaponVFXComponent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DamageRadius_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DamageRadius;
@@ -186,6 +191,14 @@ void EmptyLinkFunctionForGeneratedCodeSTUProjectile() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUProjectile_Statics::NewProp_MovementComponent = { "MovementComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUProjectile, MovementComponent), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTUProjectile_Statics::NewProp_MovementComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUProjectile_Statics::NewProp_MovementComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTUProjectile_Statics::NewProp_WeaponVFXComponent_MetaData[] = {
+		{ "Category", "VFX" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Weapons/STUProjectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUProjectile_Statics::NewProp_WeaponVFXComponent = { "WeaponVFXComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUProjectile, WeaponVFXComponent), Z_Construct_UClass_USTUWeaponVFXComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTUProjectile_Statics::NewProp_WeaponVFXComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUProjectile_Statics::NewProp_WeaponVFXComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTUProjectile_Statics::NewProp_DamageRadius_MetaData[] = {
 		{ "Category", "Weapon" },
 		{ "ModuleRelativePath", "Public/Weapons/STUProjectile.h" },
@@ -220,6 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUProjectile() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTUProjectile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUProjectile_Statics::NewProp_CollisionComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUProjectile_Statics::NewProp_MovementComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUProjectile_Statics::NewProp_WeaponVFXComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUProjectile_Statics::NewProp_DamageRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUProjectile_Statics::NewProp_DamageAmount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUProjectile_Statics::NewProp_DoFullDamage,
@@ -252,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTUProjectile, 195103210);
+	IMPLEMENT_CLASS(ASTUProjectile, 358113338);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTUProjectile>()
 	{
 		return ASTUProjectile::StaticClass();

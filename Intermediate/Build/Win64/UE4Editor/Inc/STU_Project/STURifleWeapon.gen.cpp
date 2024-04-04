@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 	STU_PROJECT_API UClass* Z_Construct_UClass_ASTURifleWeapon();
 	STU_PROJECT_API UClass* Z_Construct_UClass_ASTUBaseWeapon();
 	UPackage* Z_Construct_UPackage__Script_STU_Project();
+	STU_PROJECT_API UClass* Z_Construct_UClass_USTUWeaponVFXComponent_NoRegister();
 // End Cross Module References
 	void ASTURifleWeapon::StaticRegisterNativesASTURifleWeapon()
 	{
@@ -43,6 +44,10 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DamageAmount_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DamageAmount;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponVFXComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WeaponVFXComponent;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -78,10 +83,19 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_DamageAmount = { "DamageAmount", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTURifleWeapon, DamageAmount), METADATA_PARAMS(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_DamageAmount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_DamageAmount_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent_MetaData[] = {
+		{ "Category", "VFX" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Weapons/STURifleWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent = { "WeaponVFXComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTURifleWeapon, WeaponVFXComponent), Z_Construct_UClass_USTUWeaponVFXComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTURifleWeapon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_TimeBetweenShots,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_BulletSpred,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_DamageAmount,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASTURifleWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASTURifleWeapon>::IsAbstract,
@@ -110,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTURifleWeapon, 3011107588);
+	IMPLEMENT_CLASS(ASTURifleWeapon, 887302199);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTURifleWeapon>()
 	{
 		return ASTURifleWeapon::StaticClass();

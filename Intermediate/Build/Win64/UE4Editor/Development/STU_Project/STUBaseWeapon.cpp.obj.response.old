@@ -242,6 +242,21 @@
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Animations
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Pickups
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public
+/I ..\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara
+/I ..\Plugins\FX\Niagara\Source
+/I ..\Plugins\FX\Niagara\Source\Niagara\Classes
+/I ..\Plugins\FX\Niagara\Source\Niagara\Public
+/I ..\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraCore
+/I ..\Plugins\FX\Niagara\Source\NiagaraCore\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\VectorVM
+/I Runtime\VectorVM\Public
+/I ..\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraShader
+/I ..\Plugins\FX\Niagara\Source\NiagaraShader\Public
+/I Developer\DerivedDataCache\Public
+/I Developer\DesktopPlatform\Public
+/I Runtime\Portal
+/I Runtime\Portal\LauncherPlatform\Public
+/I ..\Plugins\FX\Niagara\Source\NiagaraVertexFactories\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -271,8 +286,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/FI"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\STU_ProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\STU_ProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\STU_ProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
 "E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Private\Weapons\STUBaseWeapon.cpp"
-/FI"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\Definitions.h"
+/FI"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\Definitions.STU_Project.h"
 /Fo"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\STUBaseWeapon.cpp.obj"
 /TP
 /GR-

@@ -8,6 +8,8 @@
 
 class USphereComponent;
 class UProjectileMovementComponent;
+class USTUWeaponVFXComponent;
+
 
 UCLASS()
 class STU_PROJECT_API ASTUProjectile : public AActor
@@ -25,6 +27,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category = "Weapon")
 	UProjectileMovementComponent* MovementComponent;
+
+	UPROPERTY(VisibleAnywhere, Category = "VFX")
+	USTUWeaponVFXComponent* WeaponVFXComponent;
 
 	UPROPERTY(VisibleDefaultsOnly, Category = "Weapon")
 	float DamageRadius = 200.0f;
