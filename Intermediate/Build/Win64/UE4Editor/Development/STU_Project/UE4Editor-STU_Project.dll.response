@@ -92,6 +92,7 @@
 "E:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "E:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
 "E:\Epic Games\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Development\Niagara\UE4Editor-Niagara.lib"
+"E:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\PhysicsCore\UE4Editor-PhysicsCore.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"

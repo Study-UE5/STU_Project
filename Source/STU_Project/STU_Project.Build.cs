@@ -14,7 +14,8 @@ public class STU_Project : ModuleRules
 			"CoreUObject",
 			"Engine",
 			"InputCore",
-			"Niagara"
+			"Niagara",
+			"PhysicsCore"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
