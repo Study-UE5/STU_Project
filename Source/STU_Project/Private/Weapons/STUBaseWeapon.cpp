@@ -7,6 +7,9 @@
 #include "DrawDebugHelpers.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/Controller.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
+
 
 DEFINE_LOG_CATEGORY_STATIC(LogBaseWeapon, All, All)
 
@@ -209,4 +212,15 @@ bool ASTUBaseWeapon::TryToAddRifle(int32 ClipsRifleAmount)
 		UE_LOG(LogBaseWeapon, Display, TEXT("Bullets Rifle Were Added!"));
 	}
 	return true;
+}
+
+UNiagaraComponent* ASTUBaseWeapon::SpawnMuzzleFX()
+{
+	return UNiagaraFunctionLibrary::SpawnSystemAttached(MuzzleFX, //
+		WeaponMesh, //
+		MuzzleSocketName, //
+		FVector::ZeroVector, //
+		FRotator::ZeroRotator, //
+		EAttachLocation::SnapToTarget, //
+		true);
 }

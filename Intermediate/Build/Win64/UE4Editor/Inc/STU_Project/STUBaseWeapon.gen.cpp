@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUBaseWeapon() {}
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	STU_PROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FAmmoData();
 	STU_PROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FWeaponUIData();
+	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraSystem_NoRegister();
 // End Cross Module References
 	void ASTUBaseWeapon::StaticRegisterNativesASTUBaseWeapon()
 	{
@@ -54,6 +55,10 @@ void EmptyLinkFunctionForGeneratedCodeSTUBaseWeapon() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UIData_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_UIData;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MuzzleFX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MuzzleFX;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -104,12 +109,20 @@ void EmptyLinkFunctionForGeneratedCodeSTUBaseWeapon() {}
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_UIData = { "UIData", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUBaseWeapon, UIData), Z_Construct_UScriptStruct_FWeaponUIData, METADATA_PARAMS(Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_UIData_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_UIData_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_MuzzleFX_MetaData[] = {
+		{ "Category", "VFX" },
+		{ "ModuleRelativePath", "Public/Weapons/STUBaseWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_MuzzleFX = { "MuzzleFX", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUBaseWeapon, MuzzleFX), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_MuzzleFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_MuzzleFX_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTUBaseWeapon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_WeaponMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_MuzzleSocketName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_TraceMaxDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_DefaultAmmo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_UIData,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUBaseWeapon_Statics::NewProp_MuzzleFX,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASTUBaseWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASTUBaseWeapon>::IsAbstract,
@@ -138,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUBaseWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTUBaseWeapon, 1830313542);
+	IMPLEMENT_CLASS(ASTUBaseWeapon, 331565636);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTUBaseWeapon>()
 	{
 		return ASTUBaseWeapon::StaticClass();
