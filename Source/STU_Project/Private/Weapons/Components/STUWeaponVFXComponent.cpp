@@ -4,8 +4,8 @@
 #include "Weapons/Components/STUWeaponVFXComponent.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
-#include "PhysicalMaterials/PhysicalMaterial.h"
-
+#include "Kismet/GameplayStatics.h"
+#include "Components/DecalComponent.h"
 
 // Sets default values for this component's properties
 USTUWeaponVFXComponent::USTUWeaponVFXComponent()
@@ -16,14 +16,32 @@ USTUWeaponVFXComponent::USTUWeaponVFXComponent()
 
 void USTUWeaponVFXComponent::PLayImpactFX(const FHitResult& Hit)
 {
-	auto Effect = DefaultEffect;
+	auto ImpactData = DefaultImpactData;
 	if (Hit.PhysMaterial.IsValid())
 	{
 		const auto Physmat = Hit.PhysMaterial.Get();
-		if (EffectsMap.Contains(Physmat))
+		if (ImpactDataMap.Contains(Physmat))
 		{
-			Effect = EffectsMap[Physmat];
+			ImpactData = ImpactDataMap[Physmat];
 		}
 	}
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), Effect, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
+	// Niagara
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(),
+		ImpactData.NiagaraEffect,
+		Hit.ImpactPoint,
+		Hit.ImpactNormal.Rotation());
+
+	//Decal
+	auto DecalComponent = UGameplayStatics::SpawnDecalAtLocation //
+	(
+		GetWorld(), //
+		ImpactData.DecalData.Material, //
+		ImpactData.DecalData.Size, //
+		Hit.ImpactPoint, //
+		Hit.ImpactNormal.Rotation() //
+	);
+	if (DecalComponent)
+	{
+		DecalComponent->SetFadeOut(ImpactData.DecalData.LifeTime, ImpactData.DecalData.FadeOutTime);
+	}
 }
