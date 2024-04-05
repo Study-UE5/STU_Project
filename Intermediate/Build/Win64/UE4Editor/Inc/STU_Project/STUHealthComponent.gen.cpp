@@ -20,6 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraShakeBase_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(USTUHealthComponent::execOnTakeAnyDamage)
 	{
@@ -216,6 +218,10 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealModifier_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HealModifier;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraShake_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_CameraShake;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -281,12 +287,20 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_HealModifier = { "HealModifier", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USTUHealthComponent, HealModifier), METADATA_PARAMS(Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_HealModifier_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_HealModifier_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_CameraShake_MetaData[] = {
+		{ "Category", "VFX" },
+		{ "ModuleRelativePath", "Public/Components/STUHealthComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_CameraShake = { "CameraShake", nullptr, (EPropertyFlags)0x0024080000010005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USTUHealthComponent, CameraShake), Z_Construct_UClass_UCameraShakeBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_CameraShake_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_CameraShake_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USTUHealthComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_MaxHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_AutoHeal,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_HealUpdateTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_HealDelay,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_HealModifier,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USTUHealthComponent_Statics::NewProp_CameraShake,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_USTUHealthComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<USTUHealthComponent>::IsAbstract,
@@ -315,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USTUHealthComponent, 1519583452);
+	IMPLEMENT_CLASS(USTUHealthComponent, 4140830956);
 	template<> STU_PROJECT_API UClass* StaticClass<USTUHealthComponent>()
 	{
 		return USTUHealthComponent::StaticClass();
