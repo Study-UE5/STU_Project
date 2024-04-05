@@ -45,14 +45,14 @@ void ASTU_BaseCharacter::BeginPlay()
 	check(HealthTextComponent);
 	check(GetCharacterMovement());
 
-	OnHealthChanged(HealthComponent->GetHealth());
+	OnHealthChanged(HealthComponent->GetHealth(), 0.0f);
 	HealthComponent->OnDeath.AddUObject(this, &ASTU_BaseCharacter::OnDeath);
 	HealthComponent->OnHealthChanged.AddUObject(this, &ASTU_BaseCharacter::OnHealthChanged);
 
 	LandedDelegate.AddDynamic(this, &ASTU_BaseCharacter::OnGroundLanded);
 }
 
-void ASTU_BaseCharacter::OnHealthChanged(float Health)
+void ASTU_BaseCharacter::OnHealthChanged(float Health, float HealthDelta)
 {
 	HealthTextComponent->SetText(FText::FromString(FString::Printf(TEXT("%.0f"), Health)));
 }
