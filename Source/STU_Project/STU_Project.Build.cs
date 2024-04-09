@@ -15,7 +15,9 @@ public class STU_Project : ModuleRules
 			"Engine",
 			"InputCore",
 			"Niagara",
-			"PhysicsCore"
+			"PhysicsCore",
+			"GameplayTasks",
+			"NavigationSystem"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
@@ -30,7 +32,8 @@ public class STU_Project : ModuleRules
         "STU_Project/Public/Animations",
         "STU_Project/Public/Pickups",
         "STU_Project/Public/Weapons/Components",
-        "STU_Project/Public/AI"
+        "STU_Project/Public/AI",
+        "STU_Project/Public/AI/Tasks"
         });
 
 		// Uncomment if you are using Slate UI
