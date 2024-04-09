@@ -14,4 +14,6 @@ class STU_PROJECT_API ASTUAIController : public AAIController
 {
 	GENERATED_BODY()
 	
+protected:
+	virtual void OnPossess(APawn* InPawn) override;
 };
