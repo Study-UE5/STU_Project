@@ -2,9 +2,9 @@
 	"RemapUnityFiles": 
 	{
 		"Module.STU_Project.cpp.obj": [
+			"STUChangeWeaponService.cpp.obj",
 			"STUFindEnemyService.cpp.obj",
 			"STUFireService.cpp.obj",
-			"STUAICharacter.cpp.obj",
 			"STUAIController.cpp.obj",
 			"STUNextLocationTask.cpp.obj",
 			"STUAnimNotify.cpp.obj",
@@ -34,13 +34,14 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
-			"STUChangeWeaponService.cpp.obj"
+			"STUAICharacter.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"STU_BaseCharacter.gen.cpp.obj",
 			"STU_CharacterMovementComponent.gen.cpp.obj",
 			"STU_GameModeBase.gen.cpp.obj",
 			"STU_PlayerController.gen.cpp.obj",
+			"STU_Project.init.gen.cpp.obj",
 			"STU_ProjectGameModeBase.gen.cpp.obj",
 			"STUAICharacter.gen.cpp.obj",
 			"STUAIController.gen.cpp.obj",
@@ -69,8 +70,7 @@
 			"STUReloadFinishedAnimNotify.gen.cpp.obj",
 			"STURifleWeapon.gen.cpp.obj",
 			"STUWeaponsComponent.gen.cpp.obj",
-			"STUWeaponVFXComponent.gen.cpp.obj",
-			"STU_Project.init.gen.cpp.obj"
+			"STUWeaponVFXComponent.gen.cpp.obj"
 		]
 	}
 }
