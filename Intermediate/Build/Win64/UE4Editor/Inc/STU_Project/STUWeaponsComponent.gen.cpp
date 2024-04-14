@@ -114,14 +114,14 @@ void EmptyLinkFunctionForGeneratedCodeSTUWeaponsComponent() {}
 		{ "ModuleRelativePath", "Public/Components/STUWeaponsComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_CurrentWeapon = { "CurrentWeapon", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USTUWeaponsComponent, CurrentWeapon), Z_Construct_UClass_ASTUBaseWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_CurrentWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_CurrentWeapon_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_CurrentWeapon = { "CurrentWeapon", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USTUWeaponsComponent, CurrentWeapon), Z_Construct_UClass_ASTUBaseWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_CurrentWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_CurrentWeapon_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons_Inner = { "Weapons", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_ASTUBaseWeapon_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Components/STUWeaponsComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons = { "Weapons", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USTUWeaponsComponent, Weapons), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons = { "Weapons", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USTUWeaponsComponent, Weapons), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_Weapons_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USTUWeaponsComponent_Statics::NewProp_CurrentReloadAnimMontage_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Components/STUWeaponsComponent.h" },
@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUWeaponsComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USTUWeaponsComponent, 1893542814);
+	IMPLEMENT_CLASS(USTUWeaponsComponent, 3697079761);
 	template<> STU_PROJECT_API UClass* StaticClass<USTUWeaponsComponent>()
 	{
 		return USTUWeaponsComponent::StaticClass();
