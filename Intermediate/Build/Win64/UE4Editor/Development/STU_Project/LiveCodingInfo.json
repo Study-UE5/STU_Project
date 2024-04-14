@@ -4,6 +4,7 @@
 		"Module.STU_Project.cpp.obj": [
 			"STUFindEnemyService.cpp.obj",
 			"STUFireService.cpp.obj",
+			"STUAICharacter.cpp.obj",
 			"STUAIController.cpp.obj",
 			"STUNextLocationTask.cpp.obj",
 			"STUAnimNotify.cpp.obj",
@@ -11,6 +12,7 @@
 			"STUReloadFinishedAnimNotify.cpp.obj",
 			"STU_CharacterMovementComponent.cpp.obj",
 			"STUAIPerceptionComponent.cpp.obj",
+			"STUAIWeaponsComponent.cpp.obj",
 			"STUHealthComponent.cpp.obj",
 			"STUWeaponsComponent.cpp.obj",
 			"STUDevDamageActor.cpp.obj",
@@ -32,8 +34,7 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
-			"STUAICharacter.cpp.obj",
-			"STUAIWeaponsComponent.cpp.obj"
+			"STUChangeWeaponService.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"STU_BaseCharacter.gen.cpp.obj",
@@ -50,6 +51,7 @@
 			"STUAnimNotify.gen.cpp.obj",
 			"STUBasePickup.gen.cpp.obj",
 			"STUBaseWeapon.gen.cpp.obj",
+			"STUChangeWeaponService.gen.cpp.obj",
 			"STUCoreTypes.gen.cpp.obj",
 			"STUDevDamageActor.gen.cpp.obj",
 			"STUEquipFinishedAnimNotify.gen.cpp.obj",
@@ -66,9 +68,9 @@
 			"STUProjectile.gen.cpp.obj",
 			"STUReloadFinishedAnimNotify.gen.cpp.obj",
 			"STURifleWeapon.gen.cpp.obj",
+			"STUWeaponsComponent.gen.cpp.obj",
 			"STUWeaponVFXComponent.gen.cpp.obj",
-			"STU_Project.init.gen.cpp.obj",
-			"STUWeaponsComponent.gen.cpp.obj"
+			"STU_Project.init.gen.cpp.obj"
 		]
 	}
 }
