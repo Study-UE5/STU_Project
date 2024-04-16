@@ -35,7 +35,8 @@ public class STU_Project : ModuleRules
         "STU_Project/Public/AI",
         "STU_Project/Public/AI/Tasks",
         "STU_Project/Public/AI/Services",
-        "STU_Project/Public/AI/EQS"
+        "STU_Project/Public/AI/EQS",
+        "STU_Project/Public/AI/Decorators"
         });
 
 		// Uncomment if you are using Slate UI

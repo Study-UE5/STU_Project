@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.STU_Project.cpp.obj": [
+			"STUEnemyEnvQueryContext.cpp.obj",
 			"STUChangeWeaponService.cpp.obj",
 			"STUFindEnemyService.cpp.obj",
 			"STUFireService.cpp.obj",
@@ -35,7 +36,7 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
-			"STUEnemyEnvQueryContext.cpp.obj"
+			"STUHealthPersentDecorator.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"STU_BaseCharacter.gen.cpp.obj",
@@ -62,6 +63,7 @@
 			"STUFireService.gen.cpp.obj",
 			"STUGameHUD.gen.cpp.obj",
 			"STUHealthComponent.gen.cpp.obj",
+			"STUHealthPersentDecorator.gen.cpp.obj",
 			"STUHealthPickup.gen.cpp.obj",
 			"STUIceDamageType.gen.cpp.obj",
 			"STULauncherWeapon.gen.cpp.obj",
