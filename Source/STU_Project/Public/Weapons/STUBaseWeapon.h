@@ -33,6 +33,8 @@ public:
 	bool TryToAddAmmo(int32 ClipsAmount);
 	bool TryToAddRifle(int32 ClipsRifleAmount);
 	bool IsAmmoEmpty() const;
+	bool IsAmmoFull() const;
+
 
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
@@ -66,7 +68,6 @@ protected:
 
 	void DecreaseAmmo();
 	bool IsClipEmpty() const;
-	bool IsAmmoFull() const;
 
 	void LogAmmo();
 
