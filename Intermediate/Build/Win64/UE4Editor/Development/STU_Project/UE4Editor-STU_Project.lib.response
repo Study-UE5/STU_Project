@@ -7,8 +7,8 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\STU_ProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\STUNeedAmmoDecorator.cpp.obj"
-"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\STUWeaponsComponent.cpp.obj"
+"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\EnvQueryTest_PickupCouldBeTaken.cpp.obj"
+"E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\STUBasePickup.cpp.obj"
 "E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\Module.STU_Project.cpp.obj"
 "E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\STU_Project.init.gen.cpp.obj"
 "E:\Study_C++\UE5\S05_Shooter\STU_Project\Intermediate\Build\Win64\UE4Editor\Development\STU_Project\Module.STU_Project.gen.cpp.obj"

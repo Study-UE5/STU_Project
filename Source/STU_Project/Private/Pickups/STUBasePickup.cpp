@@ -61,3 +61,8 @@ void ASTUBasePickup::Respawn()
 		GetRootComponent()->SetVisibility(true, true);
 	}
 }
+
+bool ASTUBasePickup::CouldBeTaken() const
+{
+	return GetWorldTimerManager().IsTimerActive(RespawnTimerHandle);
+}
