@@ -4,6 +4,7 @@
 		"Module.STU_Project.cpp.obj": [
 			"STUHealthPersentDecorator.cpp.obj",
 			"STUNeedAmmoDecorator.cpp.obj",
+			"EnvQueryTest_PickupCouldBeTaken.cpp.obj",
 			"STUEnemyEnvQueryContext.cpp.obj",
 			"STUChangeWeaponService.cpp.obj",
 			"STUFindEnemyService.cpp.obj",
@@ -24,10 +25,10 @@
 			"STUIceDamageType.cpp.obj",
 			"STUAmmoPickup.cpp.obj",
 			"STUAmmoRiflePickup.cpp.obj",
+			"STUBasePickup.cpp.obj",
 			"STUHealthPickup.cpp.obj",
 			"STU_BaseCharacter.cpp.obj",
 			"STU_PlayerController.cpp.obj",
-			"STU_GameModeBase.cpp.obj",
 			"STUGameHUD.cpp.obj",
 			"STUPlayerHUDWidget.cpp.obj",
 			"STUWeaponVFXComponent.cpp.obj",
@@ -37,14 +38,12 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
-			"EnvQueryTest_PickupCouldBeTaken.cpp.obj",
-			"STUBasePickup.cpp.obj"
+			"STU_GameModeBase.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"EnvQueryTest_PickupCouldBeTaken.gen.cpp.obj",
 			"STU_BaseCharacter.gen.cpp.obj",
 			"STU_CharacterMovementComponent.gen.cpp.obj",
-			"STU_GameModeBase.gen.cpp.obj",
 			"STU_PlayerController.gen.cpp.obj",
 			"STU_ProjectGameModeBase.gen.cpp.obj",
 			"STUAICharacter.gen.cpp.obj",
@@ -78,6 +77,7 @@
 			"STURifleWeapon.gen.cpp.obj",
 			"STUWeaponsComponent.gen.cpp.obj",
 			"STUWeaponVFXComponent.gen.cpp.obj",
+			"STU_GameModeBase.gen.cpp.obj",
 			"STU_Project.init.gen.cpp.obj"
 		]
 	}
