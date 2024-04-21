@@ -32,18 +32,19 @@
 			"STUGameHUD.cpp.obj",
 			"STUPlayerHUDWidget.cpp.obj",
 			"STUWeaponVFXComponent.cpp.obj",
-			"STUBaseWeapon.cpp.obj",
 			"STULauncherWeapon.cpp.obj",
 			"STUProjectile.cpp.obj",
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
-			"STU_GameModeBase.cpp.obj"
+			"STU_GameModeBase.cpp.obj",
+			"STUBaseWeapon.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"EnvQueryTest_PickupCouldBeTaken.gen.cpp.obj",
 			"STU_BaseCharacter.gen.cpp.obj",
 			"STU_CharacterMovementComponent.gen.cpp.obj",
+			"STU_GameModeBase.gen.cpp.obj",
 			"STU_PlayerController.gen.cpp.obj",
 			"STU_ProjectGameModeBase.gen.cpp.obj",
 			"STUAICharacter.gen.cpp.obj",
@@ -77,7 +78,6 @@
 			"STURifleWeapon.gen.cpp.obj",
 			"STUWeaponsComponent.gen.cpp.obj",
 			"STUWeaponVFXComponent.gen.cpp.obj",
-			"STU_GameModeBase.gen.cpp.obj",
 			"STU_Project.init.gen.cpp.obj"
 		]
 	}
