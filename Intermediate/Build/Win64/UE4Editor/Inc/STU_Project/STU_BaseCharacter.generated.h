@@ -80,7 +80,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__DeathAnimMontage() { return STRUCT_OFFSET(ASTU_BaseCharacter, DeathAnimMontage); } \
 	FORCEINLINE static uint32 __PPO__LifeSpanOnDeath() { return STRUCT_OFFSET(ASTU_BaseCharacter, LifeSpanOnDeath); } \
 	FORCEINLINE static uint32 __PPO__LandedDamageVelocity() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamageVelocity); } \
-	FORCEINLINE static uint32 __PPO__LandedDamage() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamage); }
+	FORCEINLINE static uint32 __PPO__LandedDamage() { return STRUCT_OFFSET(ASTU_BaseCharacter, LandedDamage); } \
+	FORCEINLINE static uint32 __PPO__MaterialColorName() { return STRUCT_OFFSET(ASTU_BaseCharacter, MaterialColorName); }
 
 
 #define STU_Project_Source_STU_Project_Public_Player_STU_BaseCharacter_h_15_PROLOG
