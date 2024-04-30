@@ -73,6 +73,7 @@ void ASTU_GameModeBase::GameTimeUpdate()
 		else
 		{
 			UE_LOG(LogSTU_GameModeBase, Display, TEXT("=====GAME OVER====="));
+			LogPlayerInfo();
 		}
 	}
 }
@@ -139,4 +140,36 @@ void ASTU_GameModeBase::SetPlayerColor(AController* Controller)
 	if (!PlayerState) return;
 
 	Character->SetPlayerColor(PlayerState->GetTeamColor());
+}
+
+void ASTU_GameModeBase::Killed(AController* KillerController, AController* VictimController)
+{
+	const auto KillerPlayerState = KillerController ? Cast<ASTUPlayerState>(KillerController->PlayerState) : nullptr;
+	const auto VictimPlayerState = VictimController ? Cast<ASTUPlayerState>(VictimController->PlayerState) : nullptr;
+
+	if (KillerPlayerState)
+	{
+		KillerPlayerState->AddKill();
+	}
+
+	if (VictimPlayerState)
+	{
+		VictimPlayerState->AddDeath();
+	}
+}
+
+void ASTU_GameModeBase::LogPlayerInfo()
+{
+	if (!GetWorld()) return;
+
+	for (auto It = GetWorld()->GetControllerIterator(); It; ++It)
+	{
+		const auto Controller = It->Get();
+		if (!Controller) continue;
+
+		const auto PlayerState = Cast<ASTUPlayerState>(Controller->PlayerState);
+		if (!PlayerState) continue;
+
+		PlayerState->LogInfo();
+	}
 }
