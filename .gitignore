@@ -9,6 +9,21 @@ DerivedDataCache/*
 Intermediate/*
 Saved/*
 
+Binaries
+DerivedDataCache
+Intermediate
+Saved
+.vscode
+.vs
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
 # User-specific files
 *.rsuser
 *.suo

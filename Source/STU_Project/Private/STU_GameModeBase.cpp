@@ -68,6 +68,7 @@ void ASTU_GameModeBase::GameTimeUpdate()
 		if (CurrentRound + 1 <= GameData.RoundsNum)
 		{
 			++CurrentRound;
+			ResetPlayers();
 			StartRound();
 		}
 		else
