@@ -6,6 +6,8 @@
 #include "GameFramework/PlayerController.h"
 #include "STU_PlayerController.generated.h"
 
+
+class USTURespawnComponent;
 /**
  * 
  */
@@ -13,5 +15,11 @@ UCLASS()
 class STU_PROJECT_API ASTU_PlayerController : public APlayerController
 {
 	GENERATED_BODY()
+
+public:
+	ASTU_PlayerController();
 	
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
+	USTURespawnComponent* RespawnComponent;
 };

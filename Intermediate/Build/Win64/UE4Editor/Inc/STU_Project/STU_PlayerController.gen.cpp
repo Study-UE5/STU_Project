@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_PlayerController() {}
 	STU_PROJECT_API UClass* Z_Construct_UClass_ASTU_PlayerController();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 	UPackage* Z_Construct_UPackage__Script_STU_Project();
+	STU_PROJECT_API UClass* Z_Construct_UClass_USTURespawnComponent_NoRegister();
 // End Cross Module References
 	void ASTU_PlayerController::StaticRegisterNativesASTU_PlayerController()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeSTU_PlayerController() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RespawnComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_RespawnComponent;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +52,17 @@ void EmptyLinkFunctionForGeneratedCodeSTU_PlayerController() {}
 		{ "ModuleRelativePath", "Public/Player/STU_PlayerController.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_PlayerController_Statics::NewProp_RespawnComponent_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Player/STU_PlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTU_PlayerController_Statics::NewProp_RespawnComponent = { "RespawnComponent", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_PlayerController, RespawnComponent), Z_Construct_UClass_USTURespawnComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTU_PlayerController_Statics::NewProp_RespawnComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_PlayerController_Statics::NewProp_RespawnComponent_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTU_PlayerController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_PlayerController_Statics::NewProp_RespawnComponent,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASTU_PlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASTU_PlayerController>::IsAbstract,
 	};
@@ -55,11 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeSTU_PlayerController() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ASTU_PlayerController_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_PlayerController_Statics::PropPointers),
 		0,
 		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ASTU_PlayerController_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_PlayerController_Statics::Class_MetaDataParams))
@@ -73,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTU_PlayerController, 2979318347);
+	IMPLEMENT_CLASS(ASTU_PlayerController, 2936443402);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTU_PlayerController>()
 	{
 		return ASTU_PlayerController::StaticClass();
