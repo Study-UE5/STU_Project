@@ -29,11 +29,10 @@
 			"STUBasePickup.cpp.obj",
 			"STUHealthPickup.cpp.obj",
 			"STU_BaseCharacter.cpp.obj",
-			"STU_PlayerController.cpp.obj",
 			"STUPlayerState.cpp.obj",
+			"STU_GameModeBase.cpp.obj",
 			"STUGameDataWidget.cpp.obj",
 			"STUGameHUD.cpp.obj",
-			"STUPlayerHUDWidget.cpp.obj",
 			"STUSpectatorWidget.cpp.obj",
 			"STUWeaponVFXComponent.cpp.obj",
 			"STUBaseWeapon.cpp.obj",
@@ -42,7 +41,8 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
-			"STU_GameModeBase.cpp.obj"
+			"STU_PlayerController.cpp.obj",
+			"STUPlayerHUDWidget.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"EnvQueryTest_PickupCouldBeTaken.gen.cpp.obj",
