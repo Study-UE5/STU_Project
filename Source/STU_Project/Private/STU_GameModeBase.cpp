@@ -9,6 +9,7 @@
 #include "Player/STUPlayerState.h"
 #include "STUUtils.h"
 #include "Components/STURespawnComponent.h"
+#include "EngineUtils.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogSTU_GameModeBase, All, All);
 
@@ -77,8 +78,7 @@ void ASTU_GameModeBase::GameTimeUpdate()
 		}
 		else
 		{
-			UE_LOG(LogSTU_GameModeBase, Display, TEXT("=====GAME OVER====="));
-			LogPlayerInfo();
+			GameOver();
 		}
 	}
 }
@@ -195,4 +195,19 @@ void ASTU_GameModeBase::StartRespawn(AController* Controller)
 void ASTU_GameModeBase::RespawnRequest(AController* Controller)
 {
 	ResetOnePlayer(Controller);
+}
+
+void ASTU_GameModeBase::GameOver()
+{
+	UE_LOG(LogSTU_GameModeBase, Display, TEXT("=====GAME OVER====="));
+	LogPlayerInfo();
+
+	for (auto Pawn : TActorRange<APawn>(GetWorld()))
+	{
+		if (Pawn)
+		{
+			Pawn->TurnOff();
+			Pawn->DisableInput(nullptr);
+		}
+	}
 }
