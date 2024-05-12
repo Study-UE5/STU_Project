@@ -18,10 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_STU_Project();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
-	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	STU_PROJECT_API UClass* Z_Construct_UClass_USTUHealthComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UTextRenderComponent_NoRegister();
 	STU_PROJECT_API UClass* Z_Construct_UClass_USTUWeaponsComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
@@ -119,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 		{ "ModuleRelativePath", "Public/Player/STU_BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASTU_BaseCharacter, nullptr, "IsRunning", nullptr, nullptr, sizeof(STU_BaseCharacter_eventIsRunning_Parms), Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASTU_BaseCharacter, nullptr, "IsRunning", nullptr, nullptr, sizeof(STU_BaseCharacter_eventIsRunning_Parms), Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -181,21 +178,9 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpringArmComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SpringArmComponent;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraComponent;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HealthComponent;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthTextComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HealthTextComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponsComponent_MetaData[];
 #endif
@@ -230,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASTU_BaseCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASTU_BaseCharacter_GetMovementDirection, "GetMovementDirection" }, // 3569914750
-		{ &Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning, "IsRunning" }, // 3729383267
+		{ &Z_Construct_UFunction_ASTU_BaseCharacter_IsRunning, "IsRunning" }, // 1794632796
 		{ &Z_Construct_UFunction_ASTU_BaseCharacter_OnGroundLanded, "OnGroundLanded" }, // 643839812
 	};
 #if WITH_METADATA
@@ -242,22 +227,6 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_SpringArmComponent_MetaData[] = {
-		{ "Category", "Components" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Player/STU_BaseCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_SpringArmComponent = { "SpringArmComponent", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, SpringArmComponent), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_SpringArmComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_SpringArmComponent_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_CameraComponent_MetaData[] = {
-		{ "Category", "Components" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Player/STU_BaseCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_CameraComponent = { "CameraComponent", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, CameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_CameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_CameraComponent_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthComponent_MetaData[] = {
 		{ "Category", "Components" },
 		{ "EditInline", "true" },
@@ -265,14 +234,6 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthComponent = { "HealthComponent", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, HealthComponent), Z_Construct_UClass_USTUHealthComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthComponent_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent_MetaData[] = {
-		{ "Category", "Components" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Player/STU_BaseCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent = { "HealthTextComponent", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, HealthTextComponent), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_WeaponsComponent_MetaData[] = {
 		{ "Category", "Components" },
@@ -317,10 +278,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_MaterialColorName = { "MaterialColorName", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, MaterialColorName), METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_MaterialColorName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_MaterialColorName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTU_BaseCharacter_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_SpringArmComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_CameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthTextComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_WeaponsComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_DeathAnimMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_LifeSpanOnDeath,
@@ -355,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTU_BaseCharacter, 379312355);
+	IMPLEMENT_CLASS(ASTU_BaseCharacter, 3408406042);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTU_BaseCharacter>()
 	{
 		return ASTU_BaseCharacter::StaticClass();
