@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STU_PROJECT_STUGameHUD_generated_h
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_SPARSE_DATA
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_RPC_WRAPPERS
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_INCLASS_NO_PURE_DECLS \
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_SPARSE_DATA
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_RPC_WRAPPERS
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASTUGameHUD(); \
 	friend struct Z_Construct_UClass_ASTUGameHUD_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ASTUGameHUD)
 
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_INCLASS \
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesASTUGameHUD(); \
 	friend struct Z_Construct_UClass_ASTUGameHUD_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ASTUGameHUD)
 
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_STANDARD_CONSTRUCTORS \
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASTUGameHUD(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASTUGameHUD) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_ENHANCED_CONSTRUCTORS \
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASTUGameHUD(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,31 +60,31 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASTUGameHUD)
 
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_PRIVATE_PROPERTY_OFFSET \
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PlayerHUDWidgetClass() { return STRUCT_OFFSET(ASTUGameHUD, PlayerHUDWidgetClass); }
 
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_12_PROLOG
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_GENERATED_BODY_LEGACY \
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_13_PROLOG
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_PRIVATE_PROPERTY_OFFSET \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_SPARSE_DATA \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_RPC_WRAPPERS \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_INCLASS \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_STANDARD_CONSTRUCTORS \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_PRIVATE_PROPERTY_OFFSET \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_SPARSE_DATA \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_RPC_WRAPPERS \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_INCLASS \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_GENERATED_BODY \
+#define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_PRIVATE_PROPERTY_OFFSET \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_SPARSE_DATA \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_INCLASS_NO_PURE_DECLS \
-	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_15_ENHANCED_CONSTRUCTORS \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_PRIVATE_PROPERTY_OFFSET \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_SPARSE_DATA \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_INCLASS_NO_PURE_DECLS \
+	STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
