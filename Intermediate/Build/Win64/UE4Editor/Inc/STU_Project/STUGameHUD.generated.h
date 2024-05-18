@@ -61,7 +61,10 @@ public: \
 
 
 #define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__PlayerHUDWidgetClass() { return STRUCT_OFFSET(ASTUGameHUD, PlayerHUDWidgetClass); }
+	FORCEINLINE static uint32 __PPO__PlayerHUDWidgetClass() { return STRUCT_OFFSET(ASTUGameHUD, PlayerHUDWidgetClass); } \
+	FORCEINLINE static uint32 __PPO__PauseWidgetClass() { return STRUCT_OFFSET(ASTUGameHUD, PauseWidgetClass); } \
+	FORCEINLINE static uint32 __PPO__GameWidgets() { return STRUCT_OFFSET(ASTUGameHUD, GameWidgets); } \
+	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ASTUGameHUD, CurrentWidget); }
 
 
 #define STU_Project_Source_STU_Project_Public_UI_STUGameHUD_h_13_PROLOG

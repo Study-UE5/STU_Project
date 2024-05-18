@@ -29,7 +29,6 @@
 			"STUBasePickup.cpp.obj",
 			"STUHealthPickup.cpp.obj",
 			"STU_BaseCharacter.cpp.obj",
-			"STU_PlayerController.cpp.obj",
 			"STUPlayerCharacter.cpp.obj",
 			"STUPlayerState.cpp.obj",
 			"STUGameDataWidget.cpp.obj",
@@ -42,8 +41,10 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
+			"STU_PlayerController.cpp.obj",
 			"STU_GameModeBase.cpp.obj",
-			"STUGameHUD.cpp.obj"
+			"STUGameHUD.cpp.obj",
+			"STUPauseWidget.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"EnvQueryTest_PickupCouldBeTaken.gen.cpp.obj",
@@ -70,7 +71,6 @@
 			"STUFireDamageType.gen.cpp.obj",
 			"STUFireService.gen.cpp.obj",
 			"STUGameDataWidget.gen.cpp.obj",
-			"STUGameHUD.gen.cpp.obj",
 			"STUHealthComponent.gen.cpp.obj",
 			"STUHealthPersentDecorator.gen.cpp.obj",
 			"STUHealthPickup.gen.cpp.obj",
@@ -78,6 +78,7 @@
 			"STULauncherWeapon.gen.cpp.obj",
 			"STUNeedAmmoDecorator.gen.cpp.obj",
 			"STUNextLocationTask.gen.cpp.obj",
+			"STUPauseWidget.gen.cpp.obj",
 			"STUPlayerCharacter.gen.cpp.obj",
 			"STUPlayerHUDWidget.gen.cpp.obj",
 			"STUPlayerState.gen.cpp.obj",
@@ -88,7 +89,8 @@
 			"STUSpectatorWidget.gen.cpp.obj",
 			"STUWeaponsComponent.gen.cpp.obj",
 			"STUWeaponVFXComponent.gen.cpp.obj",
-			"STU_Project.init.gen.cpp.obj"
+			"STU_Project.init.gen.cpp.obj",
+			"STUGameHUD.gen.cpp.obj"
 		]
 	}
 }

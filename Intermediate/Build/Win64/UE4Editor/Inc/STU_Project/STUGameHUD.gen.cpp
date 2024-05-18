@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 	UPackage* Z_Construct_UPackage__Script_STU_Project();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
+	STU_PROJECT_API UEnum* Z_Construct_UEnum_STU_Project_ESTUMatchState();
 // End Cross Module References
 	void ASTUGameHUD::StaticRegisterNativesASTUGameHUD()
 	{
@@ -37,6 +38,21 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerHUDWidgetClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_PlayerHUDWidgetClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PauseWidgetClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_PauseWidgetClass;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GameWidgets_ValueProp;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_GameWidgets_Key_KeyProp_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_GameWidgets_Key_KeyProp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameWidgets_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMapPropertyParams NewProp_GameWidgets;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentWidget;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -61,8 +77,38 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PlayerHUDWidgetClass = { "PlayerHUDWidgetClass", nullptr, (EPropertyFlags)0x0024080000010005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUGameHUD, PlayerHUDWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PlayerHUDWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PlayerHUDWidgetClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PauseWidgetClass_MetaData[] = {
+		{ "Category", "UI" },
+		{ "ModuleRelativePath", "Public/UI/STUGameHUD.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PauseWidgetClass = { "PauseWidgetClass", nullptr, (EPropertyFlags)0x0024080000010005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUGameHUD, PauseWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PauseWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PauseWidgetClass_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_ValueProp = { "GameWidgets", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_Key_KeyProp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_Key_KeyProp = { "GameWidgets_Key", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_STU_Project_ESTUMatchState, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/UI/STUGameHUD.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets = { "GameWidgets", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUGameHUD, GameWidgets), EMapPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/UI/STUGameHUD.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUGameHUD, CurrentWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTUGameHUD_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PlayerHUDWidgetClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PauseWidgetClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_ValueProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_Key_KeyProp_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_Key_KeyProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASTUGameHUD_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASTUGameHUD>::IsAbstract,
@@ -91,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTUGameHUD, 2408314332);
+	IMPLEMENT_CLASS(ASTUGameHUD, 2254415128);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTUGameHUD>()
 	{
 		return ASTUGameHUD::StaticClass();

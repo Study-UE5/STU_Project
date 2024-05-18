@@ -223,3 +223,25 @@ void ASTU_GameModeBase::SetMatchState(ESTUMatchState State)
 	MatchState = State;
 	OnMatchStateChanged.Broadcast(MatchState);
 }
+
+bool ASTU_GameModeBase::SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate)
+{
+	const auto PauseSet = Super::SetPause(PC, CanUnpauseDelegate);
+
+	if (PauseSet)
+	{
+		SetMatchState(ESTUMatchState::Pause);
+	}
+
+	return PauseSet;
+}
+
+bool ASTU_GameModeBase::ClearPause()
+{
+	const auto PauseCleared = Super::ClearPause();
+	if (PauseCleared)
+	{
+		SetMatchState(ESTUMatchState::InProgress);
+	}
+	return PauseCleared;
+}
