@@ -10,6 +10,8 @@
 #include "STUUtils.h"
 #include "Components/STURespawnComponent.h"
 #include "EngineUtils.h"
+#include "STUGameInstance.h"
+
 
 DEFINE_LOG_CATEGORY_STATIC(LogSTU_GameModeBase, All, All);
 
@@ -26,6 +28,8 @@ ASTU_GameModeBase::ASTU_GameModeBase()
 void ASTU_GameModeBase::StartPlay()
 {
 	Super::StartPlay();
+
+	UE_LOG(LogSTU_GameModeBase, Display, TEXT("%s"), *GetWorld()->GetGameInstance<USTUGameInstance>()->TestString);
 
 	SpawnBots();
 	CreateTeaInfo();
