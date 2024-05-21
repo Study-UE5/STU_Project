@@ -15,5 +15,9 @@ class STU_PROJECT_API USTUGameInstance : public UGameInstance
 	GENERATED_BODY()
 	
 public:
-	FString TestString = "Hello Game!";
+	FName GetStartupLevelName() const { return StartupLevelName; }
+
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = "Game")
+	FName StartupLevelName = NAME_None;
 };

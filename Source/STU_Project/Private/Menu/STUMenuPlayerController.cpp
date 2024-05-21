@@ -2,7 +2,6 @@
 
 
 #include "Menu/STUMenuPlayerController.h"
-#include "STUGameInstance.h"
 
 void ASTUMenuPlayerController::BeginPlay()
 {
@@ -10,6 +9,4 @@ void ASTUMenuPlayerController::BeginPlay()
 
 	SetInputMode(FInputModeUIOnly());
 	bShowMouseCursor = true;
-
-	GetWorld()->GetGameInstance<USTUGameInstance>()->TestString = "Menu Level Say Hello";
 }
