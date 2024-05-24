@@ -52,6 +52,7 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
+			"STULevelItemWidget.cpp.obj",
 			"STUMenuWidget.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
@@ -88,6 +89,7 @@
 			"STUHealthPickup.gen.cpp.obj",
 			"STUIceDamageType.gen.cpp.obj",
 			"STULauncherWeapon.gen.cpp.obj",
+			"STULevelItemWidget.gen.cpp.obj",
 			"STUMenuGameModeBase.gen.cpp.obj",
 			"STUMenuHUD.gen.cpp.obj",
 			"STUMenuPlayerController.gen.cpp.obj",
