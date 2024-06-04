@@ -27,7 +27,7 @@
 			"STUMenuGameModeBase.cpp.obj",
 			"STUMenuPlayerController.cpp.obj",
 			"STULevelItemWidget.cpp.obj",
-			"STUMenuWidget.cpp.obj",
+			"STUMenuHUD.cpp.obj",
 			"STUAmmoPickup.cpp.obj",
 			"STUAmmoRiflePickup.cpp.obj",
 			"STUBasePickup.cpp.obj",
@@ -38,6 +38,7 @@
 			"STUPlayerState.cpp.obj",
 			"STU_GameModeBase.cpp.obj",
 			"STUGameInstance.cpp.obj",
+			"STUBaseWidget.cpp.obj",
 			"STUGameDataWidget.cpp.obj",
 			"STUGameHUD.cpp.obj",
 			"STUGameOverWidget.cpp.obj",
@@ -54,8 +55,7 @@
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
 			"STU_ProjectGameModeBase.cpp.obj",
-			"STUMenuHUD.cpp.obj",
-			"STUBaseWidget.cpp.obj"
+			"STUMenuWidget.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"EnvQueryTest_PickupCouldBeTaken.gen.cpp.obj",

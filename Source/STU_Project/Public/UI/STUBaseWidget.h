@@ -18,6 +18,6 @@ public:
 	void Show();
 	
 protected:
-	UPROPERTY(meta = (BindWidgetAnim), Transient)
+	UPROPERTY(Transient, meta = (BindWidgetAnim))
 	UWidgetAnimation* ShowAnimation;
 };
