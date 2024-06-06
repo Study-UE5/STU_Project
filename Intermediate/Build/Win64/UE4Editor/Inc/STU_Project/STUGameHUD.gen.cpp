@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 	UPackage* Z_Construct_UPackage__Script_STU_Project();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
+	STU_PROJECT_API UClass* Z_Construct_UClass_USTUBaseWidget_NoRegister();
 	STU_PROJECT_API UEnum* Z_Construct_UEnum_STU_Project_ESTUMatchState();
 // End Cross Module References
 	void ASTUGameHUD::StaticRegisterNativesASTUGameHUD()
@@ -95,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameOverWidgetClass = { "GameOverWidgetClass", nullptr, (EPropertyFlags)0x0024080000010005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUGameHUD, GameOverWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameOverWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameOverWidgetClass_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_ValueProp = { "GameWidgets", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_ValueProp = { "GameWidgets", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_USTUBaseWidget_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_Key_KeyProp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_GameWidgets_Key_KeyProp = { "GameWidgets_Key", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_STU_Project_ESTUMatchState, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
@@ -111,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 		{ "ModuleRelativePath", "Public/UI/STUGameHUD.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUGameHUD, CurrentWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTUGameHUD, CurrentWidget), Z_Construct_UClass_USTUBaseWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_CurrentWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTUGameHUD_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PlayerHUDWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTUGameHUD_Statics::NewProp_PauseWidgetClass,
@@ -149,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeSTUGameHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTUGameHUD, 2329298553);
+	IMPLEMENT_CLASS(ASTUGameHUD, 3501064812);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTUGameHUD>()
 	{
 		return ASTUGameHUD::StaticClass();

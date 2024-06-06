@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
+#include "UI/STUBaseWidget.h"
 #include "STUCoreTypes.h"
 #include "STUPlayerHUDWidget.generated.h"
 
@@ -11,7 +11,7 @@
 class UProgressBar;
 
 UCLASS()
-class STU_PROJECT_API USTUPlayerHUDWidget : public UUserWidget
+class STU_PROJECT_API USTUPlayerHUDWidget : public USTUBaseWidget
 {
 	GENERATED_BODY()
 	

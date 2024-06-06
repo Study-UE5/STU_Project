@@ -28,7 +28,6 @@
 			"STUMenuPlayerController.cpp.obj",
 			"STULevelItemWidget.cpp.obj",
 			"STUMenuHUD.cpp.obj",
-			"STUMenuWidget.cpp.obj",
 			"STUAmmoPickup.cpp.obj",
 			"STUAmmoRiflePickup.cpp.obj",
 			"STUBasePickup.cpp.obj",
@@ -39,13 +38,10 @@
 			"STUPlayerState.cpp.obj",
 			"STU_GameModeBase.cpp.obj",
 			"STUGameInstance.cpp.obj",
-			"STUBaseWidget.cpp.obj",
 			"STUGameDataWidget.cpp.obj",
-			"STUGameHUD.cpp.obj",
 			"STUGameOverWidget.cpp.obj",
 			"STUGoToMenuWidget.cpp.obj",
 			"STUHealthBarWidget.cpp.obj",
-			"STUPauseWidget.cpp.obj",
 			"STUPlayerHUDWidget.cpp.obj",
 			"STUPlayerStateRowWidget.cpp.obj",
 			"STUSpectatorWidget.cpp.obj",
@@ -55,7 +51,11 @@
 			"STUProjectile.cpp.obj",
 			"STURifleWeapon.cpp.obj",
 			"STU_Project.cpp.obj",
-			"STU_ProjectGameModeBase.cpp.obj"
+			"STU_ProjectGameModeBase.cpp.obj",
+			"STUMenuWidget.cpp.obj",
+			"STUBaseWidget.cpp.obj",
+			"STUGameHUD.cpp.obj",
+			"STUPauseWidget.cpp.obj"
 		],
 		"Module.STU_Project.gen.cpp.obj": [
 			"EnvQueryTest_PickupCouldBeTaken.gen.cpp.obj",
@@ -63,7 +63,6 @@
 			"STU_CharacterMovementComponent.gen.cpp.obj",
 			"STU_GameModeBase.gen.cpp.obj",
 			"STU_PlayerController.gen.cpp.obj",
-			"STU_Project.init.gen.cpp.obj",
 			"STU_ProjectGameModeBase.gen.cpp.obj",
 			"STUAICharacter.gen.cpp.obj",
 			"STUAIController.gen.cpp.obj",
@@ -84,7 +83,6 @@
 			"STUFireDamageType.gen.cpp.obj",
 			"STUFireService.gen.cpp.obj",
 			"STUGameDataWidget.gen.cpp.obj",
-			"STUGameHUD.gen.cpp.obj",
 			"STUGameInstance.gen.cpp.obj",
 			"STUGameOverWidget.gen.cpp.obj",
 			"STUGoToMenuWidget.gen.cpp.obj",
@@ -112,7 +110,9 @@
 			"STURifleWeapon.gen.cpp.obj",
 			"STUSpectatorWidget.gen.cpp.obj",
 			"STUWeaponsComponent.gen.cpp.obj",
-			"STUWeaponVFXComponent.gen.cpp.obj"
+			"STUWeaponVFXComponent.gen.cpp.obj",
+			"STU_Project.init.gen.cpp.obj",
+			"STUGameHUD.gen.cpp.obj"
 		]
 	}
 }
