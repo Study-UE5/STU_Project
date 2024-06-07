@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STU_PROJECT_STULauncherWeapon_generated_h
 
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_SPARSE_DATA
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_RPC_WRAPPERS
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_INCLASS_NO_PURE_DECLS \
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_SPARSE_DATA
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_RPC_WRAPPERS
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASTULauncherWeapon(); \
 	friend struct Z_Construct_UClass_ASTULauncherWeapon_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ASTULauncherWeapon)
 
 
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_INCLASS \
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesASTULauncherWeapon(); \
 	friend struct Z_Construct_UClass_ASTULauncherWeapon_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ASTULauncherWeapon)
 
 
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_STANDARD_CONSTRUCTORS \
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASTULauncherWeapon(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASTULauncherWeapon) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_ENHANCED_CONSTRUCTORS \
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASTULauncherWeapon() { }; \
 private: \
@@ -60,31 +60,32 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASTULauncherWeapon)
 
 
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(ASTULauncherWeapon, ProjectileClass); }
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(ASTULauncherWeapon, ProjectileClass); } \
+	FORCEINLINE static uint32 __PPO__NoAmmoSound() { return STRUCT_OFFSET(ASTULauncherWeapon, NoAmmoSound); }
 
 
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_11_PROLOG
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_GENERATED_BODY_LEGACY \
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_13_PROLOG
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_PRIVATE_PROPERTY_OFFSET \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_SPARSE_DATA \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_RPC_WRAPPERS \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_INCLASS \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_STANDARD_CONSTRUCTORS \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_PRIVATE_PROPERTY_OFFSET \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_SPARSE_DATA \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_RPC_WRAPPERS \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_INCLASS \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_GENERATED_BODY \
+#define STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_PRIVATE_PROPERTY_OFFSET \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_SPARSE_DATA \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_INCLASS_NO_PURE_DECLS \
-	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_14_ENHANCED_CONSTRUCTORS \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_PRIVATE_PROPERTY_OFFSET \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_SPARSE_DATA \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_INCLASS_NO_PURE_DECLS \
+	STU_Project_Source_STU_Project_Public_Weapons_STULauncherWeapon_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

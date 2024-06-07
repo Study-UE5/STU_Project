@@ -9,6 +9,7 @@
 
 class USTUHealthComponent;
 class USTUWeaponsComponent;
+class USoundCue;
 
 UCLASS()
 class STU_PROJECT_API ASTU_BaseCharacter : public ACharacter
@@ -39,6 +40,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Material")
 	FName MaterialColorName = "Paint Color";
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Sound")
+	USoundCue* DeathSound;
 
 	virtual void BeginPlay() override;
 	virtual void OnDeath();

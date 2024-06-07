@@ -7,9 +7,11 @@
 #include "STUCoreTypes.h"
 #include "STUBaseWeapon.generated.h"
 
+
 class USkeletalMeshComponent;
 class UNiagaraSystem;
 class UNiagaraComponent;
+class USoundCue;
 
 UCLASS()
 class STU_PROJECT_API ASTUBaseWeapon : public AActor
@@ -54,6 +56,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "VFX")
 	UNiagaraSystem* MuzzleFX;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Sound")
+	USoundCue* FireSound;
 
 	virtual void BeginPlay() override;
 

@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 	STU_PROJECT_API UClass* Z_Construct_UClass_USTUWeaponsComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
+	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ASTU_BaseCharacter::execOnGroundLanded)
 	{
@@ -205,6 +206,10 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaterialColorName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_MaterialColorName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeathSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DeathSound;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -277,6 +282,13 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_MaterialColorName = { "MaterialColorName", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, MaterialColorName), METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_MaterialColorName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_MaterialColorName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_DeathSound_MetaData[] = {
+		{ "Category", "Sound" },
+		{ "ModuleRelativePath", "Public/Player/STU_BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_DeathSound = { "DeathSound", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTU_BaseCharacter, DeathSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_DeathSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_DeathSound_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASTU_BaseCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_HealthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_WeaponsComponent,
@@ -285,6 +297,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_LandedDamageVelocity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_LandedDamage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_MaterialColorName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTU_BaseCharacter_Statics::NewProp_DeathSound,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASTU_BaseCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASTU_BaseCharacter>::IsAbstract,
@@ -313,7 +326,7 @@ void EmptyLinkFunctionForGeneratedCodeSTU_BaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTU_BaseCharacter, 3408406042);
+	IMPLEMENT_CLASS(ASTU_BaseCharacter, 2408442161);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTU_BaseCharacter>()
 	{
 		return ASTU_BaseCharacter::StaticClass();
