@@ -38,7 +38,8 @@ public class STU_Project : ModuleRules
         "STU_Project/Public/AI/EQS",
         "STU_Project/Public/AI/Decorators",
         "STU_Project/Public/Menu",
-        "STU_Project/Public/Menu/UI"
+        "STU_Project/Public/Menu/UI",
+        "STU_Project/Public/Sound"
         });
 
 		// Uncomment if you are using Slate UI

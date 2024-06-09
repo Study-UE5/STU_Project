@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\STU_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{3606D7C1-DAB9-45DC-92F4-A3EB3C3EE88E}</UniqueIdentifier>
+      <UniqueIdentifier>{BC2BAEC9-0633-421B-AC3E-6649B022EC34}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\STU_Project.Target.cs">
       <Filter>Source</Filter>
@@ -15,7 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\README.md" />
     <Filter Include="Config">
-      <UniqueIdentifier>{4FF3F24F-C409-4A4F-AAC7-B208BC515EA7}</UniqueIdentifier>
+      <UniqueIdentifier>{67A60F71-00F0-4C63-B10E-BC35DDAC91E2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\STU_Project">
-      <UniqueIdentifier>{8BFE2E26-389A-451D-8A4C-1EBFFDC4F89C}</UniqueIdentifier>
+      <UniqueIdentifier>{BFC4D6EA-3AD8-49D4-A02A-3C27667A5928}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\STU_Project\STU_Project.Build.cs">
       <Filter>Source\STU_Project</Filter>
@@ -48,7 +48,7 @@
       <Filter>Source\STU_Project</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Private">
-      <UniqueIdentifier>{297500B6-5CAC-4AB8-9714-48D3495842B1}</UniqueIdentifier>
+      <UniqueIdentifier>{9954F4BA-D9A7-40B6-A2B5-229B476287AC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\STUGameInstance.cpp">
       <Filter>Source\STU_Project\Private</Filter>
@@ -57,7 +57,7 @@
       <Filter>Source\STU_Project\Private</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\AI">
-      <UniqueIdentifier>{DD5F6FB4-532B-4147-BC43-A324B7A7012C}</UniqueIdentifier>
+      <UniqueIdentifier>{B34452A0-A928-4932-87D7-0A2E49CFC5B9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\AI\STUAICharacter.cpp">
       <Filter>Source\STU_Project\Private\AI</Filter>
@@ -66,7 +66,7 @@
       <Filter>Source\STU_Project\Private\AI</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\AI\Decorators">
-      <UniqueIdentifier>{CC6D58FB-8D36-4C08-B9F6-FF7DE49C86C8}</UniqueIdentifier>
+      <UniqueIdentifier>{D4D6C8E4-36C4-4FE3-8292-48BB3A3B269C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\AI\Decorators\STUHealthPersentDecorator.cpp">
       <Filter>Source\STU_Project\Private\AI\Decorators</Filter>
@@ -75,7 +75,7 @@
       <Filter>Source\STU_Project\Private\AI\Decorators</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\AI\EQS">
-      <UniqueIdentifier>{DDC1948A-33B8-4D8D-B385-DA023F91E14D}</UniqueIdentifier>
+      <UniqueIdentifier>{95C49DA0-E058-4880-A377-25F32BF1AA09}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\AI\EQS\EnvQueryTest_PickupCouldBeTaken.cpp">
       <Filter>Source\STU_Project\Private\AI\EQS</Filter>
@@ -84,7 +84,7 @@
       <Filter>Source\STU_Project\Private\AI\EQS</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\AI\Services">
-      <UniqueIdentifier>{7DCC6EE2-90A6-454E-9BF6-435696686E8F}</UniqueIdentifier>
+      <UniqueIdentifier>{C37F4976-02B9-4E34-8FD0-787CF73E633E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\AI\Services\STUChangeWeaponService.cpp">
       <Filter>Source\STU_Project\Private\AI\Services</Filter>
@@ -96,13 +96,13 @@
       <Filter>Source\STU_Project\Private\AI\Services</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\AI\Tasks">
-      <UniqueIdentifier>{207035B9-30C4-4F9D-A1B4-04716D002D8E}</UniqueIdentifier>
+      <UniqueIdentifier>{CA12D486-24B9-445C-ADE8-E645A7F299AB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\AI\Tasks\STUNextLocationTask.cpp">
       <Filter>Source\STU_Project\Private\AI\Tasks</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Animations">
-      <UniqueIdentifier>{E9A96E20-832F-41BF-99CC-11BBA0030FBB}</UniqueIdentifier>
+      <UniqueIdentifier>{F45A0729-5035-4119-8691-1B057968E2DE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Animations\STUAnimNotify.cpp">
       <Filter>Source\STU_Project\Private\Animations</Filter>
@@ -114,7 +114,7 @@
       <Filter>Source\STU_Project\Private\Animations</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Components">
-      <UniqueIdentifier>{AD032BFC-61CE-4D66-8BBD-3FB335665F4B}</UniqueIdentifier>
+      <UniqueIdentifier>{CE0A040B-AF8C-4A85-885D-3DF79D59878C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Components\STUAIPerceptionComponent.cpp">
       <Filter>Source\STU_Project\Private\Components</Filter>
@@ -135,7 +135,7 @@
       <Filter>Source\STU_Project\Private\Components</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Dev">
-      <UniqueIdentifier>{B73DE500-18E8-4175-81AF-EB58FAB7E323}</UniqueIdentifier>
+      <UniqueIdentifier>{5ABBB8B1-490C-4D4B-BCD1-B53876A344BF}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Dev\STUDevDamageActor.cpp">
       <Filter>Source\STU_Project\Private\Dev</Filter>
@@ -147,7 +147,7 @@
       <Filter>Source\STU_Project\Private\Dev</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Menu">
-      <UniqueIdentifier>{78084522-D192-4A3E-8405-C918F14F43DE}</UniqueIdentifier>
+      <UniqueIdentifier>{3EE85142-A5BA-487D-9B07-556348547F4E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Menu\STUMenuGameModeBase.cpp">
       <Filter>Source\STU_Project\Private\Menu</Filter>
@@ -156,7 +156,7 @@
       <Filter>Source\STU_Project\Private\Menu</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Menu\UI">
-      <UniqueIdentifier>{733C0A2A-C363-44DA-806A-AF59A6C6446F}</UniqueIdentifier>
+      <UniqueIdentifier>{11DFF2EC-7923-430D-9076-32A9BB8C860F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Menu\UI\STULevelItemWidget.cpp">
       <Filter>Source\STU_Project\Private\Menu\UI</Filter>
@@ -168,7 +168,7 @@
       <Filter>Source\STU_Project\Private\Menu\UI</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Pickups">
-      <UniqueIdentifier>{549041F8-011F-4B41-BF88-6E34D5511AC8}</UniqueIdentifier>
+      <UniqueIdentifier>{35FE28F4-E2CF-4277-889E-078BDCDE082A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Pickups\STUAmmoPickup.cpp">
       <Filter>Source\STU_Project\Private\Pickups</Filter>
@@ -183,7 +183,7 @@
       <Filter>Source\STU_Project\Private\Pickups</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Player">
-      <UniqueIdentifier>{F19F6DC3-F1B3-4363-AB9C-6320E1F56832}</UniqueIdentifier>
+      <UniqueIdentifier>{1488555F-C514-4EF7-8CDD-528B3CA05074}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Player\STUPlayerCharacter.cpp">
       <Filter>Source\STU_Project\Private\Player</Filter>
@@ -197,8 +197,14 @@
     <ClCompile Include="..\..\Source\STU_Project\Private\Player\STU_PlayerController.cpp">
       <Filter>Source\STU_Project\Private\Player</Filter>
     </ClCompile>
+    <Filter Include="Source\STU_Project\Private\Sound">
+      <UniqueIdentifier>{3517F5AC-6CDA-4DC4-B0A6-66B992FAA3D2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\STU_Project\Private\Sound\STUSoundFunctionLib.cpp">
+      <Filter>Source\STU_Project\Private\Sound</Filter>
+    </ClCompile>
     <Filter Include="Source\STU_Project\Private\UI">
-      <UniqueIdentifier>{1F0D301E-B0A1-46AA-8DBC-DE4747D1198D}</UniqueIdentifier>
+      <UniqueIdentifier>{57A045B5-3422-49CD-A7B7-0D19CBA474EE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\UI\STUBaseWidget.cpp">
       <Filter>Source\STU_Project\Private\UI</Filter>
@@ -231,7 +237,7 @@
       <Filter>Source\STU_Project\Private\UI</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Weapons">
-      <UniqueIdentifier>{A22A4023-0F65-464C-BE55-ADDDB95FF7E5}</UniqueIdentifier>
+      <UniqueIdentifier>{9265C83B-BC34-4F5C-AD3A-C55BF3ADAEAB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Weapons\STUBaseWeapon.cpp">
       <Filter>Source\STU_Project\Private\Weapons</Filter>
@@ -246,13 +252,13 @@
       <Filter>Source\STU_Project\Private\Weapons</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Private\Weapons\Components">
-      <UniqueIdentifier>{60BFCC68-D537-4A7E-9318-E11B93B271C9}</UniqueIdentifier>
+      <UniqueIdentifier>{14457764-3511-4C0E-A435-43B807CAED7F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\STU_Project\Private\Weapons\Components\STUWeaponVFXComponent.cpp">
       <Filter>Source\STU_Project\Private\Weapons\Components</Filter>
     </ClCompile>
     <Filter Include="Source\STU_Project\Public">
-      <UniqueIdentifier>{3701C52B-13CB-4C70-9220-8C00447CD335}</UniqueIdentifier>
+      <UniqueIdentifier>{3326FC8B-783C-4F91-8F3E-93CFA8B910E7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\STUCoreTypes.h">
       <Filter>Source\STU_Project\Public</Filter>
@@ -267,7 +273,7 @@
       <Filter>Source\STU_Project\Public</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\AI">
-      <UniqueIdentifier>{275379BC-8FFD-4B24-92D1-B66BA4FC3AE3}</UniqueIdentifier>
+      <UniqueIdentifier>{AA9310CC-75BD-43E9-9FF7-95507B9AFE8F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\AI\STUAICharacter.h">
       <Filter>Source\STU_Project\Public\AI</Filter>
@@ -276,7 +282,7 @@
       <Filter>Source\STU_Project\Public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\AI\Decorators">
-      <UniqueIdentifier>{3ECBECF4-FE2A-45CA-BC47-6A38511123A7}</UniqueIdentifier>
+      <UniqueIdentifier>{7AFD466E-9288-4E37-874D-F1CBC3F9FCC1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\AI\Decorators\STUHealthPersentDecorator.h">
       <Filter>Source\STU_Project\Public\AI\Decorators</Filter>
@@ -285,7 +291,7 @@
       <Filter>Source\STU_Project\Public\AI\Decorators</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\AI\EQS">
-      <UniqueIdentifier>{BA01E3EE-5264-4791-A521-82B709BAA0BC}</UniqueIdentifier>
+      <UniqueIdentifier>{E1DE6B4A-5C3F-4068-8C66-6087E122B381}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\AI\EQS\EnvQueryTest_PickupCouldBeTaken.h">
       <Filter>Source\STU_Project\Public\AI\EQS</Filter>
@@ -294,7 +300,7 @@
       <Filter>Source\STU_Project\Public\AI\EQS</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\AI\Services">
-      <UniqueIdentifier>{E1F7EFA7-623B-4CEE-BDFC-A4FBFD67F673}</UniqueIdentifier>
+      <UniqueIdentifier>{E9930B16-61C3-4E95-8FE1-5A09DA13FC7B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\AI\Services\STUChangeWeaponService.h">
       <Filter>Source\STU_Project\Public\AI\Services</Filter>
@@ -306,13 +312,13 @@
       <Filter>Source\STU_Project\Public\AI\Services</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\AI\Tasks">
-      <UniqueIdentifier>{B9739CB3-01FB-4739-8275-FF31B2A0D588}</UniqueIdentifier>
+      <UniqueIdentifier>{1FCDEF75-2009-40A5-B28A-F6FF6158C67B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\AI\Tasks\STUNextLocationTask.h">
       <Filter>Source\STU_Project\Public\AI\Tasks</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Animations">
-      <UniqueIdentifier>{FE0FC9D4-64D6-4C3C-8EB4-24063EA8A770}</UniqueIdentifier>
+      <UniqueIdentifier>{07F91C57-41C2-45E3-9BD6-8117CF4B43E6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Animations\AnimUtils.h">
       <Filter>Source\STU_Project\Public\Animations</Filter>
@@ -327,7 +333,7 @@
       <Filter>Source\STU_Project\Public\Animations</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Components">
-      <UniqueIdentifier>{B1907214-34D8-4F7B-8898-72FE5F87DA9A}</UniqueIdentifier>
+      <UniqueIdentifier>{58FAFFF8-E6FD-45F8-BC75-B148E3DE421F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Components\STUAIPerceptionComponent.h">
       <Filter>Source\STU_Project\Public\Components</Filter>
@@ -348,7 +354,7 @@
       <Filter>Source\STU_Project\Public\Components</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Dev">
-      <UniqueIdentifier>{DA54B2E1-5C8B-442B-9853-2361C52A7B26}</UniqueIdentifier>
+      <UniqueIdentifier>{4A42AAD6-D4EC-43B8-A9A3-96D2196E8B21}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Dev\STUDevDamageActor.h">
       <Filter>Source\STU_Project\Public\Dev</Filter>
@@ -360,7 +366,7 @@
       <Filter>Source\STU_Project\Public\Dev</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Menu">
-      <UniqueIdentifier>{1DAC5070-D0DA-429B-9D52-90DDADBBC3BB}</UniqueIdentifier>
+      <UniqueIdentifier>{2874EF56-3ED1-45A0-80B2-BF9F9DF45CBD}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Menu\STUMenuGameModeBase.h">
       <Filter>Source\STU_Project\Public\Menu</Filter>
@@ -369,7 +375,7 @@
       <Filter>Source\STU_Project\Public\Menu</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Menu\UI">
-      <UniqueIdentifier>{FA622049-1BEB-4A0D-99E6-616343D15554}</UniqueIdentifier>
+      <UniqueIdentifier>{1A1D57A4-74F0-424F-8212-694724A901FB}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Menu\UI\STULevelItemWidget.h">
       <Filter>Source\STU_Project\Public\Menu\UI</Filter>
@@ -381,7 +387,7 @@
       <Filter>Source\STU_Project\Public\Menu\UI</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Pickups">
-      <UniqueIdentifier>{2E6DB382-9302-4757-8A3F-66E03CB05172}</UniqueIdentifier>
+      <UniqueIdentifier>{9A6A9EBE-A6A5-4159-B53D-E5B8001B98D4}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Pickups\STUAmmoPickup.h">
       <Filter>Source\STU_Project\Public\Pickups</Filter>
@@ -396,7 +402,7 @@
       <Filter>Source\STU_Project\Public\Pickups</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Player">
-      <UniqueIdentifier>{5C7CD740-2102-463F-A5C0-F42E046BE9F5}</UniqueIdentifier>
+      <UniqueIdentifier>{692DA739-5326-4F6A-A909-5EC61C2C2624}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Player\STUPlayerCharacter.h">
       <Filter>Source\STU_Project\Public\Player</Filter>
@@ -410,8 +416,14 @@
     <ClInclude Include="..\..\Source\STU_Project\Public\Player\STU_PlayerController.h">
       <Filter>Source\STU_Project\Public\Player</Filter>
     </ClInclude>
+    <Filter Include="Source\STU_Project\Public\Sound">
+      <UniqueIdentifier>{81483AA4-B26D-437B-B455-91BA6D1D5C78}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\STU_Project\Public\Sound\STUSoundFunctionLib.h">
+      <Filter>Source\STU_Project\Public\Sound</Filter>
+    </ClInclude>
     <Filter Include="Source\STU_Project\Public\UI">
-      <UniqueIdentifier>{B031CEDA-4EDC-4D7C-975B-0A43F61513BD}</UniqueIdentifier>
+      <UniqueIdentifier>{0B293CA4-A3B9-49F0-A9A5-6236F4FCEBCB}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\UI\STUBaseWidget.h">
       <Filter>Source\STU_Project\Public\UI</Filter>
@@ -444,7 +456,7 @@
       <Filter>Source\STU_Project\Public\UI</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Weapons">
-      <UniqueIdentifier>{F8AB575C-A75E-4E8D-9BB9-2FF53CA58C6B}</UniqueIdentifier>
+      <UniqueIdentifier>{4232071C-A006-4DC9-91B1-E8CCE713DDA6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Weapons\STUBaseWeapon.h">
       <Filter>Source\STU_Project\Public\Weapons</Filter>
@@ -459,7 +471,7 @@
       <Filter>Source\STU_Project\Public\Weapons</Filter>
     </ClInclude>
     <Filter Include="Source\STU_Project\Public\Weapons\Components">
-      <UniqueIdentifier>{5A4286FB-26DC-43FF-B16F-62F0F44EE0BF}</UniqueIdentifier>
+      <UniqueIdentifier>{9A3912B6-FBD6-4B28-BE44-7BB24D684C1B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\STU_Project\Public\Weapons\Components\STUWeaponVFXComponent.h">
       <Filter>Source\STU_Project\Public\Weapons\Components</Filter>
