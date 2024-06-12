@@ -247,6 +247,9 @@
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\AI\Services
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\AI\EQS
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\AI\Decorators
+/I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Menu
+/I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Menu\UI
+/I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public\Sound
 /I E:\Study_C++\UE5\S05_Shooter\STU_Project\Source\STU_Project\Public
 /I ..\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara
 /I ..\Plugins\FX\Niagara\Source

@@ -29,6 +29,7 @@ public:
 	bool TryToAddRifle(TSubclassOf<ASTUBaseWeapon> RifleType, int32 ClipsRifleAmount);
 	bool NeedAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType);
 
+	void Zoom(bool Enabled);
 
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon")

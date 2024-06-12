@@ -65,6 +65,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__TraceFX() { return STRUCT_OFFSET(ASTURifleWeapon, TraceFX); } \
 	FORCEINLINE static uint32 __PPO__TraceTargetName() { return STRUCT_OFFSET(ASTURifleWeapon, TraceTargetName); } \
 	FORCEINLINE static uint32 __PPO__WeaponVFXComponent() { return STRUCT_OFFSET(ASTURifleWeapon, WeaponVFXComponent); } \
+	FORCEINLINE static uint32 __PPO__FOVZoomAngle() { return STRUCT_OFFSET(ASTURifleWeapon, FOVZoomAngle); } \
 	FORCEINLINE static uint32 __PPO__NoAmmoSound() { return STRUCT_OFFSET(ASTURifleWeapon, NoAmmoSound); } \
 	FORCEINLINE static uint32 __PPO__MuzzleFXComponent() { return STRUCT_OFFSET(ASTURifleWeapon, MuzzleFXComponent); } \
 	FORCEINLINE static uint32 __PPO__FireAudioComponent() { return STRUCT_OFFSET(ASTURifleWeapon, FireAudioComponent); }

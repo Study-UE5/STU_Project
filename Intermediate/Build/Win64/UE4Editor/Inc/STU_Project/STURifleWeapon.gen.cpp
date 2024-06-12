@@ -61,6 +61,10 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WeaponVFXComponent;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FOVZoomAngle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_FOVZoomAngle;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NoAmmoSound_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NoAmmoSound;
@@ -130,6 +134,13 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent = { "WeaponVFXComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTURifleWeapon, WeaponVFXComponent), Z_Construct_UClass_USTUWeaponVFXComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_FOVZoomAngle_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Public/Weapons/STURifleWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_FOVZoomAngle = { "FOVZoomAngle", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASTURifleWeapon, FOVZoomAngle), METADATA_PARAMS(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_FOVZoomAngle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_FOVZoomAngle_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_NoAmmoSound_MetaData[] = {
 		{ "Category", "Sound" },
 		{ "ModuleRelativePath", "Public/Weapons/STURifleWeapon.h" },
@@ -157,6 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_TraceFX,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_TraceTargetName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_WeaponVFXComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_FOVZoomAngle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_NoAmmoSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_MuzzleFXComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASTURifleWeapon_Statics::NewProp_FireAudioComponent,
@@ -188,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeSTURifleWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASTURifleWeapon, 712538018);
+	IMPLEMENT_CLASS(ASTURifleWeapon, 2086267537);
 	template<> STU_PROJECT_API UClass* StaticClass<ASTURifleWeapon>()
 	{
 		return ASTURifleWeapon::StaticClass();

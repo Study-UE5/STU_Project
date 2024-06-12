@@ -151,6 +151,10 @@ bool ASTUBaseWeapon::IsAmmoFull() const
 	return CurrentAmmo.Clips == DefaultAmmo.Clips && CurrentAmmo.Bullets == DefaultAmmo.Bullets;
 }
 
+void ASTUBaseWeapon::Zoom(bool Enabled)
+{
+}
+
 bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
 {
 	if (CurrentAmmo.Infinite || IsAmmoFull() || ClipsAmount <= 0) return false;

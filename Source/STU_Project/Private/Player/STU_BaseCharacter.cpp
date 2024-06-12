@@ -72,6 +72,7 @@ void ASTU_BaseCharacter::OnDeath()
 
 	GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 	WeaponsComponent->StopFire();
+	WeaponsComponent->Zoom(false);
 
 	UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathSound, GetActorLocation());
 }
