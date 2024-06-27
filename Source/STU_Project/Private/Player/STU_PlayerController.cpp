@@ -18,8 +18,7 @@ void ASTU_PlayerController::BeginPlay()
 
 	if (GetWorld())
 	{
-		const auto GameMode = Cast<ASTU_GameModeBase>(GetWorld()->GetAuthGameMode());
-		if (GameMode)
+		if (const auto GameMode = Cast<ASTU_GameModeBase>(GetWorld()->GetAuthGameMode()))
 		{
 			GameMode->OnMatchStateChanged.AddUObject(this, &ASTU_PlayerController::OnMatchStateChanged);
 		}
